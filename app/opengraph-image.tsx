@@ -93,7 +93,7 @@ export default function OgImage() {
               borderRadius: 50,
             }}
           >
-            (765) 434-1881
+            (575) 573-2625
           </div>
           <div style={{ color: '#dbeafe', fontSize: 22 }}>
             39+ Years Experience • 24/7 Emergency
