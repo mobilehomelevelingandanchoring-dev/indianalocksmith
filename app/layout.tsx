@@ -4,7 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileCallCTA from '@/components/MobileCallCTA';
-import { buildLocalBusinessSchema } from '@/lib/schema';
+import { buildLocalBusinessSchema, buildOrganizationSchema } from '@/lib/schema';
 import {
   BUSINESS_NAME,
   BUSINESS_WEBSITE,
@@ -89,7 +89,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const schema = buildLocalBusinessSchema();
+  const localBusinessSchema = buildLocalBusinessSchema();
+  const organizationSchema = buildOrganizationSchema();
 
   return (
     <html lang="en" className={inter.variable}>
@@ -99,7 +100,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#2563eb" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="font-sans">

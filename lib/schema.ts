@@ -96,6 +96,9 @@ export function buildServiceSchema(service: {
   description: string;
   url: string;
   imageUrl?: string;
+  cityName?: string;
+  stateName?: string;
+  county?: string;
 }) {
   return {
     '@context': 'https://schema.org',
@@ -104,7 +107,8 @@ export function buildServiceSchema(service: {
     description: service.description,
     url: service.url,
     provider: {
-      '@type': 'LocalBusiness',
+      '@type': ['LocalBusiness', 'Locksmith'],
+      '@id': `${BUSINESS_WEBSITE}/#business`,
       name: BUSINESS_NAME,
       telephone: `+1${BUSINESS_PHONE}`,
       address: {
@@ -115,11 +119,119 @@ export function buildServiceSchema(service: {
         addressCountry: 'US',
       },
     },
-    areaServed: {
-      '@type': 'City',
-      name: `${BUSINESS_CITY}, ${BUSINESS_STATE}`,
-    },
+    areaServed: service.cityName
+      ? {
+          '@type': service.county ? 'AdministrativeArea' : 'City',
+          name: service.cityName,
+          containedInPlace: {
+            '@type': 'State',
+            name: service.stateName ?? BUSINESS_STATE,
+          },
+        }
+      : { '@type': 'City', name: `${BUSINESS_CITY}, ${BUSINESS_STATE}` },
     ...(service.imageUrl ? { image: service.imageUrl } : {}),
+  };
+}
+
+/** Organization schema — site-wide entity node */
+export function buildOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${BUSINESS_WEBSITE}/#organization`,
+    name: BUSINESS_NAME,
+    url: BUSINESS_WEBSITE,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${BUSINESS_WEBSITE}/icon.svg`,
+      width: 512,
+      height: 512,
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: `+1${BUSINESS_PHONE}`,
+      contactType: 'customer service',
+      areaServed: 'US-IN',
+      availableLanguage: 'English',
+      hoursAvailable: 'Mo-Su 00:00-23:59',
+    },
+    sameAs: [
+      'https://www.google.com/maps/search/Affordable+Locksmith+Kokomo+Indiana',
+      'https://www.yelp.com/biz/affordable-locksmith-kokomo',
+      'https://www.facebook.com',
+      'https://www.bbb.org',
+    ],
+    knowsAbout: [
+      'Locksmith Services',
+      'Emergency Locksmith',
+      'Automotive Locksmith',
+      'Residential Locksmith',
+      'Commercial Locksmith',
+      'Key Programming',
+      'Transponder Keys',
+      'Safe Opening',
+      'Access Control Systems',
+    ],
+    areaServed: [
+      { '@type': 'City', name: 'Kokomo', addressRegion: 'IN' },
+      { '@type': 'AdministrativeArea', name: 'Howard County', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Logansport', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Peru', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Marion', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Wabash', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Frankfort', addressRegion: 'IN' },
+      { '@type': 'City', name: 'Tipton', addressRegion: 'IN' },
+    ],
+  };
+}
+
+/** Speakable schema — marks sections optimized for voice search / TTS */
+export function buildSpeakableSchema(pageUrl: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': pageUrl,
+    url: pageUrl,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.speakable-summary', '.faq-answer'],
+    },
+  };
+}
+
+/** WebPage schema — for individual pages */
+export function buildWebPageSchema(page: {
+  title: string;
+  description: string;
+  url: string;
+  dateModified?: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': page.url,
+    name: page.title,
+    description: page.description,
+    url: page.url,
+    isPartOf: { '@id': `${BUSINESS_WEBSITE}/#website` },
+    about: { '@id': `${BUSINESS_WEBSITE}/#business` },
+    ...(page.dateModified ? { dateModified: page.dateModified } : {}),
+    inLanguage: 'en-US',
+  };
+}
+
+/** ItemList schema — for service hub and area hub pages */
+export function buildItemListSchema(items: { name: string; url: string; description: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+      description: item.description,
+    })),
   };
 }
 

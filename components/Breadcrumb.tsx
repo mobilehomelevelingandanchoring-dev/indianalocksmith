@@ -5,7 +5,7 @@ import { BUSINESS_WEBSITE } from '@/lib/constants';
 
 export interface BreadcrumbItem {
   name: string;
-  href: string;
+  href?: string;
 }
 
 interface BreadcrumbProps {
@@ -15,9 +15,9 @@ interface BreadcrumbProps {
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   const allItems = [{ name: 'Home', href: '/' }, ...items];
 
-  const schemaItems = allItems.map((item) => ({
+  const schemaItems = allItems.map((item, i) => ({
     name: item.name,
-    url: `${BUSINESS_WEBSITE}${item.href}`,
+    url: item.href ? `${BUSINESS_WEBSITE}${item.href}` : `${BUSINESS_WEBSITE}#${i}`,
   }));
 
   return (
@@ -31,10 +31,10 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
           {allItems.map((item, index) => {
             const isLast = index === allItems.length - 1;
             return (
-              <li key={item.href} className="flex items-center gap-1">
+              <li key={`${item.name}-${index}`} className="flex items-center gap-1">
                 {index === 0 && <Home className="h-3.5 w-3.5" />}
-                {isLast ? (
-                  <span className="text-slate-700 font-medium" aria-current="page">
+                {isLast || !item.href ? (
+                  <span className="text-slate-700 font-medium" aria-current={isLast ? 'page' : undefined}>
                     {item.name}
                   </span>
                 ) : (

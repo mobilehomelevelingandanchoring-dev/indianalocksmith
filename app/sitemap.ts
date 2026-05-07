@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { BUSINESS_WEBSITE } from '@/lib/constants';
 import { ALL_CITY_SLUGS } from '@/lib/cities';
 import { BLOG_POSTS } from '@/lib/blog-data';
+import { ALL_SERVICE_SLUGS, ALL_LOCATION_SLUGS } from '@/lib/seo-data';
 
 // Force static generation — this route must never be server-rendered on demand.
 // Next.js metadata routes already bypass layout.tsx entirely; this is an extra
@@ -86,7 +87,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  // ─── Tier 6 — static utility pages ───────────────────────────────────────
+  // ─── Tier 6 — programmatic service×location pages (84 pages) ───────────────
+  // Kokomo + emergency get highest priority; others get 0.65
+  const programmaticPages: MetadataRoute.Sitemap = ALL_SERVICE_SLUGS.flatMap((service) =>
+    ALL_LOCATION_SLUGS.map((location) => ({
+      url: `${BUSINESS_WEBSITE}/services/${service}/${location}`,
+      lastModified: SITE_LAUNCH,
+      changeFrequency: 'monthly' as const,
+      priority:
+        service === 'emergency-locksmith' && location === 'kokomo-in'
+          ? 0.85
+          : service === 'emergency-locksmith' || location === 'kokomo-in'
+          ? 0.75
+          : 0.65,
+    }))
+  );
+
+  // ─── Tier 7 — static utility pages ───────────────────────────────────────
   const utilityPages: MetadataRoute.Sitemap = [
     { url: `${BUSINESS_WEBSITE}/service-areas` },
     { url: `${BUSINESS_WEBSITE}/contact` },
@@ -103,6 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...corePages,
     ...servicePages,
     ...cityPages,
+    ...programmaticPages,
     ...blogIndex,
     ...blogPosts,
     ...utilityPages,
