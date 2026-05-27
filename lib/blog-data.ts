@@ -71,7 +71,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>The Bottom Line</h2>
 <p>The right locksmith combines local knowledge, honest pricing, verified credentials, and fast response. In Kokomo, Indiana, Affordable Locksmith has been that trusted professional since 1985. With over 15,000 jobs completed and hundreds of five-star reviews, we've earned our reputation one lock at a time.</p>
-<p>Next time you need a locksmith, don't gamble. Call us at (575) 573-2625.</p>
+<p>Next time you need a locksmith, don't gamble. Call us at (765) 434-1881.</p>
     `,
   },
   {
@@ -79,7 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Locked Out of Your Car in Kokomo? Here\'s Exactly What to Do',
     metaTitle: 'Locked Out of Your Car in Kokomo, IN? What to Do | Affordable Locksmith',
     metaDescription:
-      'Locked your keys inside your car in Kokomo, Indiana? Follow these steps to stay safe and get back on the road fast. Call (575) 573-2625 for 24/7 help.',
+      'Locked your keys inside your car in Kokomo, Indiana? Follow these steps to stay safe and get back on the road fast. Call (765) 434-1881 for 24/7 help.',
     excerpt:
       "A car lockout is stressful, but it doesn't have to be dangerous or expensive. Here's a step-by-step guide for what to do when you're locked out of your vehicle in Kokomo, IN.",
     datePublished: '2024-02-10',
@@ -121,7 +121,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Call a Local Kokomo Locksmith</h2>
-<p>If none of the above applies, calling a local locksmith is the fastest and most cost-effective solution. When you call Affordable Locksmith at (575) 573-2625, here's what happens:</p>
+<p>If none of the above applies, calling a local locksmith is the fastest and most cost-effective solution. When you call Affordable Locksmith at (765) 434-1881, here's what happens:</p>
 <ol>
 <li>We answer immediately—no hold music, no call centers</li>
 <li>We confirm your location and give you an honest arrival time estimate</li>
@@ -137,7 +137,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Keep a spare key with a trusted family member or friend</li>
 <li>Install a magnetic key holder under your vehicle (use with caution)</li>
 <li>Consider a keyless entry system—we install and program these</li>
-<li>Add our number to your contacts: <strong>(575) 573-2625</strong></li>
+<li>Add our number to your contacts: <strong>(765) 434-1881</strong></li>
 </ul>
 
 <h2>Affordable, Fast Car Lockout Service in Kokomo</h2>
@@ -200,7 +200,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>For larger homes or properties with multiple buildings, a master key system lets you have one key that opens everything while still maintaining separate keys for different areas. This is especially useful for homeowners with rental units or detached garages.</p>
 
 <h2>Get a Free Security Consultation in Kokomo</h2>
-<p>Not sure where to start? We offer security consultations for homeowners throughout Kokomo and Howard County. We'll walk through your property, identify vulnerabilities, and recommend cost-effective solutions. Call (575) 573-2625 to schedule yours.</p>
+<p>Not sure where to start? We offer security consultations for homeowners throughout Kokomo and Howard County. We'll walk through your property, identify vulnerabilities, and recommend cost-effective solutions. Call (765) 434-1881 to schedule yours.</p>
     `,
   },
   {
@@ -268,7 +268,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Lockouts don't respect business hours. If a manager gets locked out of your facility at 6 AM before opening, or your break-in alarm triggers at 2 AM, we're available 24/7 to respond anywhere in Howard County.</p>
 
 <h2>Schedule a Commercial Security Assessment</h2>
-<p>The best way to understand your business's security needs is a professional assessment. We'll walk your facility, identify vulnerabilities, and provide a written quote for recommended improvements—at no obligation. Call (575) 573-2625 or use our contact form to get started.</p>
+<p>The best way to understand your business's security needs is a professional assessment. We'll walk your facility, identify vulnerabilities, and provide a written quote for recommended improvements—at no obligation. Call (765) 434-1881 or use our contact form to get started.</p>
     `,
   },
   {
@@ -276,7 +276,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Emergency Locksmith Services in Kokomo: What to Expect and How to Stay Safe',
     metaTitle: 'Emergency Locksmith Kokomo, IN | 24/7 Response | Affordable Locksmith',
     metaDescription:
-      'Need an emergency locksmith in Kokomo, Indiana? Know what to expect, how to stay safe during a lockout, and how to get fast help. Available 24/7 at (575) 573-2625.',
+      'Need an emergency locksmith in Kokomo, Indiana? Know what to expect, how to stay safe during a lockout, and how to get fast help. Available 24/7 at (765) 434-1881.',
     excerpt:
       "Emergencies happen at the worst times. Whether you're locked out of your home, car, or business at 3 AM, here's how to handle it safely and get help fast in Kokomo.",
     datePublished: '2024-04-05',
@@ -311,7 +311,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>What to Expect When You Call</h2>
-<p>When you call Affordable Locksmith at (575) 573-2625, here's exactly what happens:</p>
+<p>When you call Affordable Locksmith at (765) 434-1881, here's exactly what happens:</p>
 <ol>
 <li><strong>Immediate answer.</strong> We don't use voicemail or answering services during emergencies. A real person answers.</li>
 <li><strong>Quick assessment.</strong> We ask for your location, the type of lockout, and any relevant details (car make/model for auto lockouts).</li>
@@ -330,7 +330,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Save Our Number Before You Need It</h2>
-<p>The worst time to search for a locksmith is when you're already in an emergency. Add <strong>(575) 573-2625</strong> to your contacts right now. We're here when you need us—day or night, rain or snow, holiday or not.</p>
+<p>The worst time to search for a locksmith is when you're already in an emergency. Add <strong>(765) 434-1881</strong> to your contacts right now. We're here when you need us—day or night, rain or snow, holiday or not.</p>
     `,
   },
 ];

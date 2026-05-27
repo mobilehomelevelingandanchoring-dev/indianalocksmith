@@ -7,9 +7,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Safe & Vault Services Kokomo IN | Safe Opening, Combination Change | (575) 573-2625',
+  title: 'Safe & Vault Services Kokomo IN | Safe Opening, Combination Change | (765) 434-1881',
   description:
-    'Professional safe and vault services in Kokomo, Indiana. Safe opening without damage, combination changes, digital lock reset, vault repair. Call (575) 573-2625.',
+    'Professional safe and vault services in Kokomo, Indiana. Safe opening without damage, combination changes, digital lock reset, vault repair. Call (765) 434-1881.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/safe-services` },
 };
 

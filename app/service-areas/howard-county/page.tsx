@@ -8,7 +8,7 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 export const metadata: Metadata = {
   title: 'Howard County Locksmith | Full Coverage | Affordable Locksmith',
   description:
-    'Locksmith services throughout Howard County, Indiana. Kokomo, Greentown, Russiaville, and all county communities. 24/7 emergency service. Call (575) 573-2625.',
+    'Locksmith services throughout Howard County, Indiana. Kokomo, Greentown, Russiaville, and all county communities. 24/7 emergency service. Call (765) 434-1881.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/service-areas/howard-county` },
 };
 

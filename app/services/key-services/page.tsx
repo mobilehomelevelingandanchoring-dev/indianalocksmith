@@ -7,9 +7,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Key Services Kokomo IN | Key Cutting, Transponder Keys, Key Fobs | (575) 573-2625',
+  title: 'Key Services Kokomo IN | Key Cutting, Transponder Keys, Key Fobs | (765) 434-1881',
   description:
-    'Professional key services in Kokomo, Indiana. Key cutting, transponder key programming, key fob replacement, high-security key duplication. Affordable pricing. Call (575) 573-2625.',
+    'Professional key services in Kokomo, Indiana. Key cutting, transponder key programming, key fob replacement, high-security key duplication. Affordable pricing. Call (765) 434-1881.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/key-services` },
 };
 

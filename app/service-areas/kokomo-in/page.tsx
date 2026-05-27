@@ -8,12 +8,12 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Kokomo IN | #1 Trusted Local Locksmith | (575) 573-2625',
+  title: 'Locksmith Kokomo IN | #1 Trusted Local Locksmith | (765) 434-1881',
   description:
-    'The #1 trusted locksmith in Kokomo, Indiana. Car lockouts, home lockouts, rekeying, transponder keys, commercial security, and 24/7 emergency service. Call (575) 573-2625.',
+    'The #1 trusted locksmith in Kokomo, Indiana. Car lockouts, home lockouts, rekeying, transponder keys, commercial security, and 24/7 emergency service. Call (765) 434-1881.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/service-areas/kokomo-in` },
   openGraph: {
-    title: 'Locksmith Kokomo, IN | Fast Response | (575) 573-2625',
+    title: 'Locksmith Kokomo, IN | Fast Response | (765) 434-1881',
     description: 'Trusted local locksmith serving all of Kokomo, Indiana. 39+ years experience, 24/7 emergency service, upfront pricing.',
   },
 };
@@ -28,7 +28,7 @@ const faqs = [
   { question: 'Who is the best locksmith in Kokomo, Indiana?', answer: 'Affordable Locksmith is widely considered Kokomo\'s most trusted locksmith. With 39+ years of local experience, owner-operated service, 4.9-star ratings from 247+ customers, and 24/7 availability, we\'ve earned our reputation serving Howard County families and businesses.' },
   { question: 'How quickly can a locksmith arrive in Kokomo?', answer: 'Our average response time within Kokomo city limits is 15–30 minutes. We\'re locally based and know every part of the city, so we reach you faster than national dispatch services.' },
   { question: 'What locksmith services are available in Kokomo, IN?', answer: 'We offer all locksmith services in Kokomo: car lockouts, home lockouts, business lockouts, lock rekeying and installation, transponder key programming, key fob replacement, safe opening, and commercial security systems.' },
-  { question: 'Do you offer emergency locksmith service in Kokomo at night?', answer: 'Yes — 24 hours a day, 7 days a week, 365 days a year. Call (575) 573-2625 any time and a real person will answer and dispatch to you immediately.' },
+  { question: 'Do you offer emergency locksmith service in Kokomo at night?', answer: 'Yes — 24 hours a day, 7 days a week, 365 days a year. Call (765) 434-1881 any time and a real person will answer and dispatch to you immediately.' },
   { question: 'Is there a locksmith near me in Kokomo, IN?', answer: 'Yes! Affordable Locksmith is based right here in Kokomo. We are the nearest local locksmith for most residents and businesses in Howard County, with faster response times than any out-of-town service.' },
 ];
 

@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!city) return {};
 
   return {
-    title: `Locksmith ${city.name}, ${city.stateShort} | Fast Response | (575) 573-2625`,
-    description: `Professional locksmith serving ${city.name}, ${city.state}. Car lockouts, home lockouts, key programming, lock rekeying. Serving ${city.name} from our ${BUSINESS_CITY} base — call (575) 573-2625.`,
+    title: `Locksmith ${city.name}, ${city.stateShort} | Fast Response | (765) 434-1881`,
+    description: `Professional locksmith serving ${city.name}, ${city.state}. Car lockouts, home lockouts, key programming, lock rekeying. Serving ${city.name} from our ${BUSINESS_CITY} base — call (765) 434-1881.`,
     alternates: { canonical: `${BUSINESS_WEBSITE}/service-areas/${params.city}` },
     openGraph: {
       title: `Locksmith ${city.name}, ${city.stateShort} | Affordable Locksmith`,
@@ -43,7 +43,7 @@ function CityFAQs(city: City) {
     },
     {
       question: `Is there a 24/7 emergency locksmith that serves ${city.name}?`,
-      answer: `Yes. While our base is in Kokomo, we respond to emergencies in ${city.name} around the clock. Call (575) 573-2625 any time and we\'ll provide an honest arrival estimate for your ${city.name} location.`,
+      answer: `Yes. While our base is in Kokomo, we respond to emergencies in ${city.name} around the clock. Call (765) 434-1881 any time and we\'ll provide an honest arrival estimate for your ${city.name} location.`,
     },
     {
       question: `Can you program transponder keys in ${city.name}, IN?`,
