@@ -7,9 +7,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Residential Locksmith Kokomo IN | Home Lockouts, Rekeying, Smart Locks | (765) 434-1881',
+  title: 'Residential Locksmith Kokomo IN | Home Lockouts, Rekeying, Smart Locks | (855) 633-0750',
   description:
-    'Residential locksmith services in Kokomo, Indiana. Home lockouts, lock installation, rekeying, deadbolts, smart locks. Licensed, insured, owner-operated. Call (765) 434-1881.',
+    'Residential locksmith services in Kokomo, Indiana. Home lockouts, lock installation, rekeying, deadbolts, smart locks. Licensed, insured, owner-operated. Call (855) 633-0750.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/residential-locksmith` },
 };
 
@@ -27,7 +27,7 @@ const faqs = [
   { question: 'How much does it cost to rekey a house in Kokomo?', answer: 'Rekeying costs start at $25 per lock with a service call fee. A full house rekey of 5–6 locks is typically $100–$200 total. It\'s far less expensive than replacing locks and just as secure.' },
   { question: 'Should I rekey or replace my locks when I move?', answer: 'For most homeowners, rekeying is the smart choice. It costs less, takes less time, and renders all previous keys invalid. Replacement is recommended when locks are old, worn, or you want to upgrade security level.' },
   { question: 'Can you install smart locks in my Kokomo home?', answer: 'Yes! We install and configure all major smart lock brands including Schlage Encode, August Smart Lock Pro, and Kwikset Halo. We also help set up the app and program access codes.' },
-  { question: 'What if I\'m locked out of my house at night?', answer: 'Call us any time at (765) 434-1881. We offer 24/7 emergency home lockout service in Kokomo and throughout Howard County. Average response time is 15–30 minutes.' },
+  { question: 'What if I\'m locked out of my house at night?', answer: 'Call us any time at (855) 633-0750. We offer 24/7 emergency home lockout service in Kokomo and throughout Howard County. Average response time is 15–30 minutes.' },
 ];
 
 export default function ResidentialLocksmithPage() {

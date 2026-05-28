@@ -7,9 +7,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Commercial Locksmith Kokomo IN | Access Control, Master Keys | (765) 434-1881',
+  title: 'Commercial Locksmith Kokomo IN | Access Control, Master Keys | (855) 633-0750',
   description:
-    'Commercial locksmith services in Kokomo, Indiana. Access control systems, master key systems, panic bars, high-security locks, and business lockouts. Call (765) 434-1881.',
+    'Commercial locksmith services in Kokomo, Indiana. Access control systems, master key systems, panic bars, high-security locks, and business lockouts. Call (855) 633-0750.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/commercial-locksmith` },
 };
 

@@ -9,7 +9,7 @@ import { SERVICES } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Locksmith Services Kokomo IN | Automotive, Residential & Commercial',
   description:
-    `Complete locksmith services in Kokomo, Indiana — automotive lockouts, residential locks, commercial security, emergency service, key programming, and safes. ${BUSINESS_YEARS_EXPERIENCE}+ years experience. Call (765) 434-1881.`,
+    `Complete locksmith services in Kokomo, Indiana — automotive lockouts, residential locks, commercial security, emergency service, key programming, and safes. ${BUSINESS_YEARS_EXPERIENCE}+ years experience. Call (855) 633-0750.`,
   alternates: { canonical: `${BUSINESS_WEBSITE}/services` },
 };
 

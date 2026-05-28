@@ -1,8 +1,8 @@
 export const BUSINESS_NAME = 'Affordable Locksmith';
 export const BUSINESS_NAME_FULL = 'Affordable Locksmith Kokomo';
-export const BUSINESS_PHONE = '7654341881';
-export const BUSINESS_PHONE_DISPLAY = '(765) 434-1881';
-export const BUSINESS_PHONE_HREF = 'tel:+17654341881';
+export const BUSINESS_PHONE = '8556330750';
+export const BUSINESS_PHONE_DISPLAY = '(855) 633-0750';
+export const BUSINESS_PHONE_HREF = 'tel:+18556330750';
 export const BUSINESS_EMAIL = 'info@affordablelocksmithkokomo.com';
 export const BUSINESS_WEBSITE = 'https://affordablelocksmithkokomo.com';
 export const BUSINESS_ADDRESS_STREET = 'Kokomo';
@@ -201,7 +201,7 @@ export const FAQ_HOME = [
   },
   {
     question: 'Are you available for emergency locksmith service 24/7?',
-    answer: 'Yes! We offer true 24/7 emergency locksmith service in Kokomo and throughout Howard County. Whether you\'re locked out at 2 AM or need urgent lock repair on a holiday, just call (765) 434-1881 and we\'ll be there.',
+    answer: 'Yes! We offer true 24/7 emergency locksmith service in Kokomo and throughout Howard County. Whether you\'re locked out at 2 AM or need urgent lock repair on a holiday, just call (855) 633-0750 and we\'ll be there.',
   },
 ];
 
@@ -214,7 +214,7 @@ export const STATS = [
 
 export const DEFAULT_META = {
   titleTemplate: '%s | Affordable Locksmith Kokomo, IN',
-  defaultTitle: 'Affordable Locksmith Kokomo, IN | (765) 434-1881 | 24/7 Service',
-  description: 'Trusted locksmith in Kokomo, Indiana with 39+ years of experience. Car lockouts, residential, commercial, and emergency locksmith services. Call (765) 434-1881.',
+  defaultTitle: 'Affordable Locksmith Kokomo, IN | (855) 633-0750 | 24/7 Service',
+  description: 'Trusted locksmith in Kokomo, Indiana with 39+ years of experience. Car lockouts, residential, commercial, and emergency locksmith services. Call (855) 633-0750.',
   ogImage: '/og-image.jpg',
 };

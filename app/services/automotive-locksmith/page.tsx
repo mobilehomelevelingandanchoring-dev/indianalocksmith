@@ -8,9 +8,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Automotive Locksmith Kokomo IN | Car Lockout, Key Programming | (765) 434-1881',
+  title: 'Automotive Locksmith Kokomo IN | Car Lockout, Key Programming | (855) 633-0750',
   description:
-    'Professional automotive locksmith in Kokomo, Indiana. Car lockouts, transponder key programming, key fob replacement, ignition repair. Fast 15-30 min response. Call (765) 434-1881.',
+    'Professional automotive locksmith in Kokomo, Indiana. Car lockouts, transponder key programming, key fob replacement, ignition repair. Fast 15-30 min response. Call (855) 633-0750.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/automotive-locksmith` },
   openGraph: {
     title: 'Automotive Locksmith Kokomo IN | Car Lockout & Key Programming',
