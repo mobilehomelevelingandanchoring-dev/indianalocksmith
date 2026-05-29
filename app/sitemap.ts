@@ -103,7 +103,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // ─── Tier 7 — static utility pages ───────────────────────────────────────
+  // ─── Tier 7 — content authority pages (FAQ + local guide) ────────────────
+  const contentPages: MetadataRoute.Sitemap = [
+    { url: `${BUSINESS_WEBSITE}/faq`, priority: 0.75 },
+    { url: `${BUSINESS_WEBSITE}/kokomo-indiana`, priority: 0.7 },
+  ].map((entry) => ({
+    ...entry,
+    lastModified: new Date('2025-05-29'),
+    changeFrequency: 'monthly' as const,
+  }));
+
+  // ─── Tier 8 — static utility pages ───────────────────────────────────────
   const utilityPages: MetadataRoute.Sitemap = [
     { url: `${BUSINESS_WEBSITE}/service-areas` },
     { url: `${BUSINESS_WEBSITE}/contact` },
@@ -121,6 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...servicePages,
     ...cityPages,
     ...programmaticPages,
+    ...contentPages,
     ...blogIndex,
     ...blogPosts,
     ...utilityPages,
