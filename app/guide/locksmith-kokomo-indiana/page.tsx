@@ -546,7 +546,7 @@ export default function LocksmithGuideKokomoPage() {
                   <th className="text-left px-4 py-3 rounded-tl-lg">Service</th>
                   <th className="text-center px-4 py-3">Starting Price</th>
                   <th className="text-center px-4 py-3 hidden sm:table-cell">Typical Range</th>
-                  <th className="text-left px-4 py-3 rounded-tr-lg hidden md:table-cell">What's Included</th>
+                  <th className="text-left px-4 py-3 rounded-tr-lg hidden md:table-cell">What&apos;s Included</th>
                 </tr>
               </thead>
               <tbody>
