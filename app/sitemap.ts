@@ -103,8 +103,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // ─── Tier 7 — content authority pages (FAQ + local guide) ────────────────
+  // ─── Tier 7 — content authority pages (pillar guide + FAQ + local guide) ──
   const contentPages: MetadataRoute.Sitemap = [
+    { url: `${BUSINESS_WEBSITE}/guide/locksmith-kokomo-indiana`, priority: 0.85 },
     { url: `${BUSINESS_WEBSITE}/faq`, priority: 0.75 },
     { url: `${BUSINESS_WEBSITE}/kokomo-indiana`, priority: 0.7 },
   ].map((entry) => ({

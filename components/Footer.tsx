@@ -185,6 +185,7 @@ export default function Footer() {
             {[
               { href: '/about', label: 'About Us' },
               { href: '/contact', label: 'Get a Free Quote' },
+              { href: '/guide/locksmith-kokomo-indiana', label: 'Locksmith Guide' },
               { href: '/faq', label: 'Locksmith FAQ' },
               { href: '/kokomo-indiana', label: 'Kokomo Indiana Guide' },
               { href: '/blog', label: 'Locksmith Blog' },
