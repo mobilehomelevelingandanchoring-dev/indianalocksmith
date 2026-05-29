@@ -8,13 +8,13 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Automotive Locksmith Kokomo IN | Car Lockout, Key Programming | (855) 633-0750',
+  title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (855) 633-0750',
   description:
-    'Professional automotive locksmith in Kokomo, Indiana. Car lockouts, transponder key programming, key fob replacement, ignition repair. Fast 15-30 min response. Call (855) 633-0750.',
+    'Looking for an automotive locksmith in Kokomo Indiana? Affordable Locksmith provides auto locksmith services — car lockouts, transponder key programming, key fob replacement, ignition repair. 15–30 min response. Call (855) 633-0750.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/automotive-locksmith` },
   openGraph: {
-    title: 'Automotive Locksmith Kokomo IN | Car Lockout & Key Programming',
-    description: 'Expert car lockout and key programming services in Kokomo. Transponder keys, key fobs, ignition repair. 24/7 available.',
+    title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (855) 633-0750',
+    description: 'Expert auto locksmith and car lockout services in Kokomo Indiana. Transponder keys, key fobs, ignition repair. 24/7 available.',
   },
 };
 
@@ -54,10 +54,10 @@ export default function AutomotiveLocksmithPage() {
                 Automotive Locksmith — Kokomo, IN
               </div>
               <h1 className="text-4xl lg:text-5xl font-black text-white mb-5">
-                Car Lockout & Automotive Key Services in Kokomo
+                Automotive Locksmith in Kokomo, Indiana — Auto Locksmith & Car Lockout
               </h1>
               <p className="text-blue-100 text-lg mb-6">
-                Locked out of your car, need a new transponder key, or have an ignition problem? Our automotive locksmith arrives in 15–30 minutes, fully equipped to handle any vehicle on the road.
+                Locked out of your car, need a new transponder key, or have an ignition problem? Our auto locksmith in Kokomo Indiana arrives in 15–30 minutes, fully equipped to handle any vehicle on the road.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href={BUSINESS_PHONE_HREF} className="btn-accent text-lg px-8 py-3">

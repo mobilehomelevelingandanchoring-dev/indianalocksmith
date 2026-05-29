@@ -6,13 +6,13 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@
 import { buildServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Emergency Locksmith Kokomo IN | 24/7 Fast Response | (855) 633-0750',
+  title: '24 Hour Locksmith Kokomo Indiana | Emergency Locksmith 24/7 | (855) 633-0750',
   description:
-    '24/7 emergency locksmith in Kokomo, Indiana. Car lockouts, home lockouts, business lockouts — 15-30 minute response time throughout Howard County. Call (855) 633-0750 now.',
+    'Need a 24 hour locksmith in Kokomo Indiana? Affordable Locksmith answers every call — car lockouts, home lockouts, business lockouts, 15–30 minute response throughout Howard County. Call (855) 633-0750 now.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/emergency-locksmith` },
   openGraph: {
-    title: '24/7 Emergency Locksmith Kokomo, IN | Call Now: (855) 633-0750',
-    description: 'Immediate emergency locksmith response in Kokomo and Howard County. 15-30 minute arrival. Car lockouts, home lockouts, business lockouts.',
+    title: '24 Hour Locksmith Kokomo Indiana | Emergency Locksmith 24/7 | (855) 633-0750',
+    description: 'True 24 hour locksmith in Kokomo Indiana — immediate response for car lockouts, home lockouts, and business lockouts throughout Howard County.',
   },
 };
 
@@ -55,7 +55,7 @@ export default function EmergencyLocksmithPage() {
                 Available Right Now — 24/7 Emergency Service
               </div>
               <h1 className="text-4xl lg:text-5xl font-black text-white mb-5">
-                24/7 Emergency Locksmith in Kokomo, Indiana
+                24 Hour Emergency Locksmith in Kokomo, Indiana
               </h1>
               <p className="text-red-100 text-lg mb-6">
                 Locked out? Don&apos;t wait. Call us now and we&apos;ll be at your location in Kokomo or Howard County in 15–30 minutes — any hour, any day of the year.

@@ -16,8 +16,8 @@ import {
 } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `About Affordable Locksmith | ${BUSINESS_YEARS_EXPERIENCE}+ Years Serving Kokomo, IN`,
-  description: `Learn about Affordable Locksmith — Kokomo, Indiana's owner-operated, trusted locksmith since ${BUSINESS_ESTABLISHED}. ${BUSINESS_YEARS_EXPERIENCE}+ years of experience, honest pricing, and true community commitment.`,
+  title: `Affordable Locksmith Kokomo Indiana | About Us | Since ${BUSINESS_ESTABLISHED}`,
+  description: `Affordable Locksmith Kokomo Indiana — owner-operated since ${BUSINESS_ESTABLISHED}. ${BUSINESS_YEARS_EXPERIENCE}+ years as Kokomo's most trusted locksmith. Honest pricing, no subcontractors, and real community commitment. Learn our story.`,
   alternates: { canonical: `${BUSINESS_WEBSITE}/about` },
 };
 

@@ -213,8 +213,8 @@ export const STATS = [
 ];
 
 export const DEFAULT_META = {
-  titleTemplate: '%s | Affordable Locksmith Kokomo, IN',
-  defaultTitle: 'Affordable Locksmith Kokomo, IN | (855) 633-0750 | 24/7 Service',
-  description: 'Trusted locksmith in Kokomo, Indiana with 39+ years of experience. Car lockouts, residential, commercial, and emergency locksmith services. Call (855) 633-0750.',
+  titleTemplate: '%s | Affordable Locksmith Kokomo Indiana',
+  defaultTitle: 'Locksmith Kokomo Indiana | Affordable Locksmith | (855) 633-0750',
+  description: 'Affordable Locksmith — trusted locksmiths in Kokomo, Indiana with 39+ years of experience. Locksmith in Kokomo Indiana for car lockouts, home lockouts, commercial locks, and 24/7 emergency service. Call (855) 633-0750.',
   ogImage: '/og-image.jpg',
 };
