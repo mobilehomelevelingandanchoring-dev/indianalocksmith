@@ -80,6 +80,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BUSINESS_WEBSITE,
   },
+  verification: {
+    google: 'nsvk-HhnR68TxkUhnZ2vXBLxfcD0eQsL9v03RxMUYfI',
+  },
   other: {
     'geo.region': 'US-IN',
     'geo.placename': `${BUSINESS_CITY}, ${BUSINESS_STATE}`,
