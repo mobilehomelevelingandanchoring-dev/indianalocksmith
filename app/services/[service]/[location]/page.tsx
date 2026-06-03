@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Phone, Clock, MapPin, CheckCircle, ChevronRight, Star, Shield, Zap } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
 import Breadcrumb from '@/components/Breadcrumb';
-import { buildServiceSchema, buildBreadcrumbSchema, buildFAQSchema, buildSpeakableSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
 import { BUSINESS_PHONE_DISPLAY, BUSINESS_PHONE_HREF, BUSINESS_WEBSITE } from '@/lib/constants';
 import {
   ALL_SERVICE_SLUGS,
@@ -67,8 +67,10 @@ export async function generateMetadata({
       description,
     },
     other: {
-      'geo.region': `US-IN`,
+      'geo.region': 'US-IN',
       'geo.placename': `${locationData.name}, ${locationData.stateShort}`,
+      'geo.position': '40.4865;-86.1336',
+      'ICBM': '40.4865, -86.1336',
     },
   };
 }
@@ -98,6 +100,8 @@ export default function ServiceLocationPage({
     cityName: locationData.name,
     stateName: locationData.state,
     county: locationData.county,
+    serviceType: serviceData.name,
+    priceRange: serviceData.paaQuestions[1]?.answer.split('.')[0] ?? 'Call for upfront pricing',
   });
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Home', url: BUSINESS_WEBSITE },
@@ -105,17 +109,15 @@ export default function ServiceLocationPage({
     { name: serviceData.name, url: `${BUSINESS_WEBSITE}/services/${params.service}` },
     { name: locationData.name, url: pageUrl },
   ]);
-  const faqSchema = buildFAQSchema(faqs);
   const speakableSchema = buildSpeakableSchema(pageUrl);
 
   const isEmergency = params.service === 'emergency-locksmith';
 
   return (
     <>
-      {/* Schema injection */}
+      {/* Schema injection — FAQPage is handled by <FAQSection> to avoid duplication */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       {/* Emergency top bar */}
@@ -209,6 +211,22 @@ export default function ServiceLocationPage({
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Quick Answer — featured-snippet bait + Speakable target */}
+        <div className="container-custom pt-8 pb-0">
+          <div className="quick-answer bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-5">
+            <p className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1.5">Quick Answer</p>
+            <p className="speakable-summary text-slate-800 text-base leading-snug">
+              <strong>{serviceData.name}</strong> in <strong>{locationData.name}, {locationData.stateShort}</strong>: {serviceData.shortDescription.split('.')[0]}
+              {locationData.distanceMiles
+                ? `. We dispatch from Kokomo — ${locationData.distanceMiles} miles from ${locationData.name}, typical arrival ${locationData.responseTime}.`
+                : `. Based in ${locationData.name} and serving all of ${locationData.county}, response in ${locationData.responseTime}.`}
+              {' '}Call{' '}
+              <a href={BUSINESS_PHONE_HREF} className="text-amber-700 font-bold hover:underline">{BUSINESS_PHONE_DISPLAY}</a>
+              {' '}— available 24/7.
+            </p>
           </div>
         </div>
 

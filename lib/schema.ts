@@ -21,6 +21,7 @@ export function buildLocalBusinessSchema() {
     '@type': ['LocalBusiness', 'Locksmith'],
     '@id': `${BUSINESS_WEBSITE}/#business`,
     name: BUSINESS_NAME,
+    alternateName: ['Affordable Locksmith Kokomo', 'Affordable Locksmith Kokomo IN'],
     description:
       'Professional locksmith serving Kokomo, Indiana and Howard County with 39+ years of experience. Available 24/7 for automotive, residential, commercial, and emergency locksmith services.',
     url: BUSINESS_WEBSITE,
@@ -39,16 +40,53 @@ export function buildLocalBusinessSchema() {
       latitude: BUSINESS_COORDINATES.lat,
       longitude: BUSINESS_COORDINATES.lng,
     },
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: BUSINESS_COORDINATES.lat,
+        longitude: BUSINESS_COORDINATES.lng,
+      },
+      geoRadius: '320000',
+    },
     areaServed: [
       { '@type': 'City', name: 'Kokomo', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'County', name: 'Howard County', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Indianapolis', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Carmel', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Fishers', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Noblesville', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Westfield', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Anderson', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Logansport', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Peru', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Tipton', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Frankfort', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Greentown', containedInPlace: { '@type': 'State', name: 'Indiana' } },
       { '@type': 'City', name: 'Marion', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Greenwood', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Avon', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Brownsburg', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Hammond', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Gary', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Valparaiso', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Michigan City', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'Jeffersonville', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'City', name: 'New Albany', containedInPlace: { '@type': 'State', name: 'Indiana' } },
+      { '@type': 'State', name: 'Indiana' },
     ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Locksmith Services — Kokomo Indiana',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/emergency-locksmith#service`, name: '24/7 Emergency Locksmith Service', url: `${BUSINESS_WEBSITE}/services/emergency-locksmith` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/automotive-locksmith#service`, name: 'Automotive Locksmith — Car Lockouts & Key Programming', url: `${BUSINESS_WEBSITE}/services/automotive-locksmith` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/residential-locksmith#service`, name: 'Residential Locksmith — Home Lockouts & Rekeying', url: `${BUSINESS_WEBSITE}/services/residential-locksmith` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/commercial-locksmith#service`, name: 'Commercial Locksmith — Master Keys & Access Control', url: `${BUSINESS_WEBSITE}/services/commercial-locksmith` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/key-services#service`, name: 'Key Cutting, Duplication & Transponder Programming', url: `${BUSINESS_WEBSITE}/services/key-services` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${BUSINESS_WEBSITE}/services/safe-services#service`, name: 'Safe Opening, Combination Changes & Vault Services', url: `${BUSINESS_WEBSITE}/services/safe-services` } },
+      ],
+    },
     openingHoursSpecification: BUSINESS_HOURS.map((h) => ({
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: h.day,
@@ -68,10 +106,18 @@ export function buildLocalBusinessSchema() {
     hasMap: `https://maps.google.com/?q=${encodeURIComponent(`${BUSINESS_NAME} Kokomo Indiana`)}`,
     image: `${BUSINESS_WEBSITE}/og-image.jpg`,
     logo: `${BUSINESS_WEBSITE}/logo.png`,
+    knowsAbout: [
+      'Locksmith Services', 'Emergency Locksmith', 'Car Lockout Service',
+      'Automotive Key Programming', 'Transponder Key Replacement', 'Residential Locksmith',
+      'Lock Rekeying', 'Deadbolt Installation', 'Smart Lock Installation',
+      'Commercial Locksmith', 'Master Key Systems', 'Access Control Systems',
+      'Safe Opening', 'Safe Combination Changes', 'Key Duplication',
+    ],
     sameAs: [
-      'https://www.google.com/maps',
-      'https://www.yelp.com',
+      'https://www.google.com/maps/search/Affordable+Locksmith+Kokomo+Indiana',
+      'https://www.yelp.com/biz/affordable-locksmith-kokomo',
       'https://www.facebook.com',
+      'https://www.bbb.org',
     ],
   };
 }
@@ -99,13 +145,17 @@ export function buildServiceSchema(service: {
   cityName?: string;
   stateName?: string;
   county?: string;
+  serviceType?: string;
+  priceRange?: string;
 }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `${service.url}#service`,
     name: service.name,
     description: service.description,
     url: service.url,
+    ...(service.serviceType ? { serviceType: service.serviceType } : {}),
     provider: {
       '@type': ['LocalBusiness', 'Locksmith'],
       '@id': `${BUSINESS_WEBSITE}/#business`,
@@ -129,6 +179,16 @@ export function buildServiceSchema(service: {
           },
         }
       : { '@type': 'City', name: `${BUSINESS_CITY}, ${BUSINESS_STATE}` },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      description: service.priceRange ?? 'Call for upfront pricing — no hidden fees',
+      availability: 'https://schema.org/InStock',
+      availableAtOrFrom: {
+        '@type': ['LocalBusiness', 'Locksmith'],
+        '@id': `${BUSINESS_WEBSITE}/#business`,
+      },
+    },
     ...(service.imageUrl ? { image: service.imageUrl } : {}),
   };
 }
@@ -185,7 +245,7 @@ export function buildOrganizationSchema() {
   };
 }
 
-/** Speakable schema — marks sections optimized for voice search / TTS */
+/** Speakable schema — marks sections optimized for voice search / Google AI Overview */
 export function buildSpeakableSchema(pageUrl: string) {
   return {
     '@context': 'https://schema.org',
@@ -194,7 +254,7 @@ export function buildSpeakableSchema(pageUrl: string) {
     url: pageUrl,
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', '.speakable-summary', '.faq-answer'],
+      cssSelector: ['h1', '.speakable-summary', '.quick-answer'],
     },
   };
 }
