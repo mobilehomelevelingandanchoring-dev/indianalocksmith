@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS_YEARS_EXPERIENCE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: 'Commercial Locksmith Kokomo IN | Access Control, Master Keys | (855) 633-0750',
@@ -31,15 +32,26 @@ const faqs = [
 ];
 
 export default function CommercialLocksmithPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/commercial-locksmith`;
   const schema = buildServiceSchema({
     name: 'Commercial Locksmith Services Kokomo, IN',
     description: 'Commercial locksmith services in Kokomo, Indiana — access control systems, master key systems, panic bars, high-security locks, and business lockouts.',
-    url: `${BUSINESS_WEBSITE}/services/commercial-locksmith`,
+    url: pageUrl,
+    serviceType: 'Commercial Locksmith',
+    priceRange: 'Commercial lockouts from $85 · Master key systems from $300 · Access control from $150/door',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Commercial Locksmith', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <section className="bg-hero-gradient text-white py-16 lg:py-20">
         <div className="container-custom">
@@ -120,6 +132,7 @@ export default function CommercialLocksmithPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Commercial Locksmith FAQs" />
+      <ServiceLocationLinks serviceSlug="commercial-locksmith" serviceName="Commercial Locksmith" />
 
       <section className="section-pad bg-blue-900 text-white">
         <div className="container-custom text-center">

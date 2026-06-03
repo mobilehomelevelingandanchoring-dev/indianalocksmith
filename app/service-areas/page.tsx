@@ -6,10 +6,21 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@
 import { CITIES } from '@/lib/cities';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Service Areas | Howard County & Surrounding Indiana Cities',
+  title: 'Locksmith Service Areas Indiana | 120+ Cities Served | (855) 633-0750',
   description:
-    'Affordable Locksmith serves Kokomo, Indiana and all surrounding communities. See our full service area map covering Howard County and 12+ nearby cities.',
+    'Affordable Locksmith serves Kokomo, Indiana and 120+ surrounding communities statewide — Hamilton County, Hendricks County, Johnson County, Lake County, Marion County (Indianapolis), and Southern Indiana. Mobile locksmith, no tow-in required. Call (855) 633-0750.',
+  keywords: [
+    'locksmith service areas Indiana', 'mobile locksmith Indiana', 'locksmith near me Indiana',
+    'Howard County locksmith', 'Hamilton County locksmith', 'Marion County locksmith',
+    'Lake County locksmith Indiana', 'Clark County locksmith Indiana',
+  ],
   alternates: { canonical: `${BUSINESS_WEBSITE}/service-areas` },
+  openGraph: {
+    title: 'Locksmith Service Areas — 120+ Indiana Cities | Affordable Locksmith',
+    description: 'Mobile locksmith serving 120+ Indiana cities from Kokomo. Car lockouts, home lockouts, key programming, 24/7 emergency service statewide.',
+    url: `${BUSINESS_WEBSITE}/service-areas`,
+    type: 'website',
+  },
 };
 
 export default function ServiceAreasPage() {
@@ -20,10 +31,10 @@ export default function ServiceAreasPage() {
           <Breadcrumb items={[{ name: 'Service Areas', href: '/service-areas' }]} />
           <div className="max-w-3xl mt-4">
             <h1 className="text-4xl lg:text-5xl font-black text-white mb-5">
-              Locksmith Service Areas — Kokomo & Howard County, IN
+              Locksmith Service Areas — 120+ Indiana Cities
             </h1>
             <p className="text-blue-100 text-lg mb-8">
-              We&apos;re a fully mobile locksmith service. We come directly to you — home, car, or business — anywhere in Kokomo, Howard County, and the surrounding communities of north-central Indiana.
+              We&apos;re a fully mobile locksmith service. We come directly to you — home, car, or business — anywhere in Kokomo, Howard County, and across Indiana including Indianapolis, Hamilton County, Lake County, and Southern Indiana.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a href={BUSINESS_PHONE_HREF} className="btn-accent text-lg px-8 py-3">
@@ -91,8 +102,8 @@ export default function ServiceAreasPage() {
             </Link>
           </div>
 
-          <h2 className="section-title mb-3">Surrounding Cities & Communities</h2>
-          <p className="text-slate-600 mb-8">We regularly serve these communities. Response times are typically 30–60 minutes.</p>
+          <h2 className="section-title mb-3">All Indiana Cities & Communities We Serve</h2>
+          <p className="text-slate-600 mb-8">We regularly serve all of these communities. Response times vary by distance — click any city for specific timing and service details.</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {CITIES.map((city) => (
               <Link

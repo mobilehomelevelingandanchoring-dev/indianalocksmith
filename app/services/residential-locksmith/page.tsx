@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS_YEARS_EXPERIENCE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: 'Residential Locksmith Kokomo IN | Home Lockouts, Rekeying, Smart Locks | (855) 633-0750',
@@ -31,15 +32,26 @@ const faqs = [
 ];
 
 export default function ResidentialLocksmithPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/residential-locksmith`;
   const schema = buildServiceSchema({
     name: 'Residential Locksmith Services Kokomo, IN',
     description: 'Residential locksmith services in Kokomo, Indiana — home lockouts, lock rekeying, deadbolt installation, smart lock setup, and home security consulting.',
-    url: `${BUSINESS_WEBSITE}/services/residential-locksmith`,
+    url: pageUrl,
+    serviceType: 'Residential Locksmith',
+    priceRange: 'Home lockouts from $75 · Lock rekeying from $25/lock · Deadbolt installation from $50',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Residential Locksmith', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <section className="bg-hero-gradient text-white py-16 lg:py-20">
         <div className="container-custom">
@@ -143,6 +155,7 @@ export default function ResidentialLocksmithPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Residential Locksmith FAQs" />
+      <ServiceLocationLinks serviceSlug="residential-locksmith" serviceName="Residential Locksmith" />
 
       <section className="section-pad bg-blue-900 text-white">
         <div className="container-custom text-center">

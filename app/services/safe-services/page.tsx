@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS_YEARS_EXPERIENCE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: 'Safe & Vault Services Kokomo IN | Safe Opening, Combination Change | (855) 633-0750',
@@ -31,15 +32,26 @@ const faqs = [
 ];
 
 export default function SafeServicesPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/safe-services`;
   const schema = buildServiceSchema({
     name: 'Safe & Vault Services Kokomo, IN',
     description: 'Professional safe and vault services in Kokomo, Indiana — safe opening, combination changes, digital lock reset, vault repair, and antique safe service.',
-    url: `${BUSINESS_WEBSITE}/services/safe-services`,
+    url: pageUrl,
+    serviceType: 'Safe & Vault Services',
+    priceRange: 'Safe opening from $150 · Combination change from $75 · Digital lock reset from $50',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Safe & Vault Services', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <section className="bg-hero-gradient text-white py-16 lg:py-20">
         <div className="container-custom">
@@ -144,6 +156,7 @@ export default function SafeServicesPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Safe Service FAQs" />
+      <ServiceLocationLinks serviceSlug="safe-services" serviceName="Safe & Vault Services" />
     </>
   );
 }

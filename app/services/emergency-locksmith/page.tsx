@@ -3,7 +3,8 @@ import { Phone, AlertCircle, Clock, Car, Home, Building2, CheckCircle, Shield } 
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: '24 Hour Locksmith Kokomo Indiana | Emergency Locksmith 24/7 | (855) 633-0750',
@@ -34,15 +35,26 @@ const faqs = [
 ];
 
 export default function EmergencyLocksmithPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/emergency-locksmith`;
   const schema = buildServiceSchema({
     name: 'Emergency Locksmith Service Kokomo, IN — 24/7',
     description: '24/7 emergency locksmith service in Kokomo, Indiana. Fast 15-30 minute response for car lockouts, home lockouts, and business lockouts throughout Howard County.',
-    url: `${BUSINESS_WEBSITE}/services/emergency-locksmith`,
+    url: pageUrl,
+    serviceType: 'Emergency Locksmith',
+    priceRange: 'Car lockouts from $65 · Home lockouts from $75 · Commercial lockouts from $85',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Emergency Locksmith', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       {/* Emergency-specific hero — red accent */}
       <section className="bg-gradient-to-br from-slate-900 via-red-950 to-red-900 text-white py-16 lg:py-24">
@@ -143,6 +155,7 @@ export default function EmergencyLocksmithPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Emergency Locksmith FAQs — Kokomo, IN" />
+      <ServiceLocationLinks serviceSlug="emergency-locksmith" serviceName="Emergency Locksmith" />
     </>
   );
 }

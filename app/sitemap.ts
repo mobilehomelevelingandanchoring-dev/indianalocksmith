@@ -11,6 +11,8 @@ export const dynamic = 'force-static';
 
 // Site launch date — used as lastModified for pages that rarely change.
 const SITE_LAUNCH = new Date('2024-01-15');
+// Date of major city expansion — used for new city + programmatic pages.
+const CITY_EXPANSION = new Date('2025-06-01');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // ─── Tier 1 — highest crawl priority ─────────────────────────────────────
@@ -63,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ─── Tier 4 — geo / city pages ────────────────────────────────────────────
   const cityPages: MetadataRoute.Sitemap = ALL_CITY_SLUGS.map((slug) => ({
     url: `${BUSINESS_WEBSITE}/service-areas/${slug}`,
-    lastModified: SITE_LAUNCH,
+    lastModified: CITY_EXPANSION,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -92,13 +94,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const programmaticPages: MetadataRoute.Sitemap = ALL_SERVICE_SLUGS.flatMap((service) =>
     ALL_LOCATION_SLUGS.map((location) => ({
       url: `${BUSINESS_WEBSITE}/services/${service}/${location}`,
-      lastModified: SITE_LAUNCH,
+      lastModified: CITY_EXPANSION,
       changeFrequency: 'monthly' as const,
       priority:
         service === 'emergency-locksmith' && location === 'kokomo-in'
           ? 0.85
           : service === 'emergency-locksmith' || location === 'kokomo-in'
           ? 0.75
+          : location === 'indianapolis-in' || location === 'carmel-in' || location === 'fishers-in'
+          ? 0.72
           : 0.65,
     }))
   );

@@ -5,7 +5,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import Testimonials from '@/components/Testimonials';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS_YEARS_EXPERIENCE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (855) 633-0750',
@@ -34,15 +35,26 @@ const faqs = [
 ];
 
 export default function AutomotiveLocksmithPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/automotive-locksmith`;
   const schema = buildServiceSchema({
     name: 'Automotive Locksmith Services Kokomo, IN',
     description: 'Professional automotive locksmith services in Kokomo, Indiana including car lockouts, transponder key programming, key fob replacement, and ignition repair.',
-    url: `${BUSINESS_WEBSITE}/services/automotive-locksmith`,
+    url: pageUrl,
+    serviceType: 'Automotive Locksmith',
+    priceRange: 'Car lockouts from $65 · Transponder key programming from $80 · Key fob programming from $75',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Automotive Locksmith', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <section className="bg-hero-gradient text-white py-16 lg:py-20">
         <div className="container-custom">
@@ -134,6 +146,7 @@ export default function AutomotiveLocksmithPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Automotive Locksmith FAQs — Kokomo, IN" />
+      <ServiceLocationLinks serviceSlug="automotive-locksmith" serviceName="Automotive Locksmith" />
       <Testimonials />
 
       <section className="section-pad bg-hero-gradient text-white">

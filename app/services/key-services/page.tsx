@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQSection from '@/components/FAQSection';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@/lib/constants';
-import { buildServiceSchema } from '@/lib/schema';
+import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from '@/lib/schema';
+import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
   title: 'Key Services Kokomo IN | Key Cutting, Transponder Keys, Key Fobs | (855) 633-0750',
@@ -31,15 +32,26 @@ const faqs = [
 ];
 
 export default function KeyServicesPage() {
+  const pageUrl = `${BUSINESS_WEBSITE}/services/key-services`;
   const schema = buildServiceSchema({
     name: 'Key Services Kokomo, IN — Cutting, Programming & Duplication',
     description: 'Professional key services in Kokomo, Indiana — key cutting, transponder key programming, key fob replacement, and high-security key duplication.',
-    url: `${BUSINESS_WEBSITE}/services/key-services`,
+    url: pageUrl,
+    serviceType: 'Key Services',
+    priceRange: 'Standard key copy from $3 · Transponder key from $80 · Key fob programming from $75',
   });
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: BUSINESS_WEBSITE },
+    { name: 'Services', url: `${BUSINESS_WEBSITE}/services` },
+    { name: 'Key Services', url: pageUrl },
+  ]);
+  const speakableSchema = buildSpeakableSchema(pageUrl);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <section className="bg-hero-gradient text-white py-16 lg:py-20">
         <div className="container-custom">
@@ -139,6 +151,7 @@ export default function KeyServicesPage() {
       </section>
 
       <FAQSection faqs={faqs} title="Key Service FAQs" />
+      <ServiceLocationLinks serviceSlug="key-services" serviceName="Key Services" />
     </>
   );
 }
