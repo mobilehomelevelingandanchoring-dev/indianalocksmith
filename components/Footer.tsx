@@ -202,6 +202,47 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* City link strip — site-wide internal links to all major Indiana service areas */}
+      <div className="border-t border-slate-800 py-5">
+        <div className="container-custom">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Also Serving Across Indiana:</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            {[
+              { name: 'Indianapolis', slug: 'indianapolis-in' },
+              { name: 'Carmel', slug: 'carmel-in' },
+              { name: 'Fishers', slug: 'fishers-in' },
+              { name: 'Noblesville', slug: 'noblesville-in' },
+              { name: 'Westfield', slug: 'westfield-in' },
+              { name: 'Anderson', slug: 'anderson-in' },
+              { name: 'Avon', slug: 'avon-in' },
+              { name: 'Brownsburg', slug: 'brownsburg-in' },
+              { name: 'Plainfield', slug: 'plainfield-in' },
+              { name: 'Greenwood', slug: 'greenwood-in' },
+              { name: 'Franklin', slug: 'franklin-in' },
+              { name: 'Greenfield', slug: 'greenfield-in' },
+              { name: 'Shelbyville', slug: 'shelbyville-in' },
+              { name: 'Martinsville', slug: 'martinsville-in' },
+              { name: 'Hammond', slug: 'hammond-in' },
+              { name: 'Gary', slug: 'gary-in' },
+              { name: 'Merrillville', slug: 'merrillville-in' },
+              { name: 'Munster', slug: 'munster-in' },
+              { name: 'Valparaiso', slug: 'valparaiso-in' },
+              { name: 'Michigan City', slug: 'michigan-city-in' },
+              { name: 'Jeffersonville', slug: 'jeffersonville-in' },
+              { name: 'New Albany', slug: 'new-albany-in' },
+            ].map((city) => (
+              <Link
+                key={city.slug}
+                href={`/service-areas/${city.slug}`}
+                className="text-xs text-slate-500 hover:text-slate-300 transition-colors"
+              >
+                {city.name}, IN
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-slate-800">
         <div className="container-custom py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">

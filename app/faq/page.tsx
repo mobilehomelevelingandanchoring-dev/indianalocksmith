@@ -482,6 +482,65 @@ export default function FAQPage() {
             <Link href="/about" className="btn-outline text-sm px-5 py-2.5">Our Story</Link>
             <Link href="/services" className="btn-outline text-sm px-5 py-2.5">All Services</Link>
             <Link href="/service-areas" className="btn-outline text-sm px-5 py-2.5">Service Areas</Link>
+            <Link href="/blog" className="btn-outline text-sm px-5 py-2.5">Locksmith Blog</Link>
+            <Link href="/contact" className="btn-outline text-sm px-5 py-2.5">Get a Free Quote</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* City discovery — internal linking for crawl coverage */}
+      <section className="section-pad bg-slate-50">
+        <div className="container-custom">
+          <h2 className="section-title mb-3 text-center">Find Locksmith Help in Your Indiana City</h2>
+          <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            We serve 120+ Indiana communities. Click your city for local response times, pricing, and service details.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 mb-6">
+            {[
+              { name: 'Kokomo', slug: 'kokomo-in' },
+              { name: 'Indianapolis', slug: 'indianapolis-in' },
+              { name: 'Carmel', slug: 'carmel-in' },
+              { name: 'Fishers', slug: 'fishers-in' },
+              { name: 'Noblesville', slug: 'noblesville-in' },
+              { name: 'Westfield', slug: 'westfield-in' },
+              { name: 'Anderson', slug: 'anderson-in' },
+              { name: 'Avon', slug: 'avon-in' },
+              { name: 'Brownsburg', slug: 'brownsburg-in' },
+              { name: 'Plainfield', slug: 'plainfield-in' },
+              { name: 'Greenwood', slug: 'greenwood-in' },
+              { name: 'Franklin', slug: 'franklin-in' },
+              { name: 'Greenfield', slug: 'greenfield-in' },
+              { name: 'Shelbyville', slug: 'shelbyville-in' },
+              { name: 'Martinsville', slug: 'martinsville-in' },
+              { name: 'Logansport', slug: 'logansport-in' },
+              { name: 'Marion', slug: 'marion-in' },
+              { name: 'Peru', slug: 'peru-in' },
+              { name: 'Tipton', slug: 'tipton-in' },
+              { name: 'Frankfort', slug: 'frankfort-in' },
+              { name: 'Hammond', slug: 'hammond-in' },
+              { name: 'Gary', slug: 'gary-in' },
+              { name: 'Merrillville', slug: 'merrillville-in' },
+              { name: 'Valparaiso', slug: 'valparaiso-in' },
+              { name: 'Michigan City', slug: 'michigan-city-in' },
+              { name: 'Jeffersonville', slug: 'jeffersonville-in' },
+              { name: 'New Albany', slug: 'new-albany-in' },
+              { name: 'Wabash', slug: 'wabash-in' },
+              { name: 'Elwood', slug: 'elwood-in' },
+              { name: 'Munster', slug: 'munster-in' },
+            ].map((city) => (
+              <Link
+                key={city.slug}
+                href={`/service-areas/${city.slug}`}
+                className="card p-3 text-center text-sm font-medium text-slate-700 hover:text-blue-600 hover:border-blue-200 hover:bg-blue-50/50 transition-all"
+              >
+                {city.name}
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link href="/service-areas" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700">
+              View All 120+ Service Areas →
+            </Link>
           </div>
         </div>
       </section>

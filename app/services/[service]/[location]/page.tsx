@@ -90,7 +90,7 @@ export default function ServiceLocationPage({
   const pageUrl = `${BUSINESS_WEBSITE}/services/${params.service}/${params.location}`;
   const faqs = buildLocationFAQs(serviceData, locationData);
   const otherServices = getOtherServices(params.service as ServiceSlug);
-  const nearbyLocations = getNearbyLocations(params.location as LocationSlug, 5);
+  const nearbyLocations = getNearbyLocations(params.location as LocationSlug, 8);
 
   // Schema
   const serviceSchema = buildServiceSchema({
@@ -283,6 +283,22 @@ export default function ServiceLocationPage({
                   </ul>
                 </>
               )}
+              <div className="mt-5 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
+                <Link
+                  href={`/service-areas/${params.location}`}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700"
+                >
+                  <MapPin className="w-4 h-4" />
+                  All Locksmith Services in {locationData.name} →
+                </Link>
+                <Link
+                  href={`/services/${params.service}`}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                  {serviceData.name} Overview →
+                </Link>
+              </div>
             </div>
 
             <div className="bg-primary-900 text-white rounded-2xl p-6">

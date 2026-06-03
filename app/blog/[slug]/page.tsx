@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { BookOpen, Clock, Tag, Calendar, ArrowLeft, Phone, ArrowRight } from 'lucide-react';
+import { BookOpen, Clock, Tag, Calendar, ArrowLeft, Phone, ArrowRight, MapPin, HelpCircle } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
 import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_NAME, BUSINESS_WEBSITE } from '@/lib/constants';
 import { getBlogPostBySlug, BLOG_POSTS, ALL_BLOG_SLUGS } from '@/lib/blog-data';
@@ -174,6 +174,49 @@ export default function BlogPostPage({ params }: PageProps) {
                     </Link>
                   ))}
                 </div>
+              </div>
+
+              {/* FAQ + City links */}
+              <div className="card p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <HelpCircle className="h-4 w-4 text-blue-600" />
+                  <h3 className="font-bold text-slate-900">Locksmith FAQ</h3>
+                </div>
+                <p className="text-xs text-slate-500 mb-3">Pricing, timing, what to expect — answered honestly.</p>
+                <Link href="/faq" className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-700">
+                  Browse All FAQs <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+
+              <div className="card p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <MapPin className="h-4 w-4 text-blue-600" />
+                  <h3 className="font-bold text-slate-900">Service Areas</h3>
+                </div>
+                <ul className="space-y-1.5">
+                  {[
+                    { href: '/service-areas/kokomo-in', label: 'Kokomo, IN' },
+                    { href: '/service-areas/indianapolis-in', label: 'Indianapolis, IN' },
+                    { href: '/service-areas/carmel-in', label: 'Carmel, IN' },
+                    { href: '/service-areas/fishers-in', label: 'Fishers, IN' },
+                    { href: '/service-areas/noblesville-in', label: 'Noblesville, IN' },
+                    { href: '/service-areas/anderson-in', label: 'Anderson, IN' },
+                    { href: '/service-areas/greenwood-in', label: 'Greenwood, IN' },
+                    { href: '/service-areas/hammond-in', label: 'Hammond, IN' },
+                  ].map((area) => (
+                    <li key={area.href}>
+                      <Link href={area.href} className="flex items-center gap-1.5 text-sm text-slate-600 hover:text-blue-600 transition-colors">
+                        <ArrowRight className="h-3 w-3 text-blue-400 shrink-0" />
+                        {area.label}
+                      </Link>
+                    </li>
+                  ))}
+                  <li className="pt-1">
+                    <Link href="/service-areas" className="text-sm font-semibold text-blue-600 hover:text-blue-700">
+                      All Locations →
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </aside>
           </div>

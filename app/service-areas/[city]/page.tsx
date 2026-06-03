@@ -12,7 +12,7 @@ import {
   BUSINESS_CITY,
   BUSINESS_NAME,
 } from '@/lib/constants';
-import { getCityBySlug, ALL_CITY_SLUGS, type City } from '@/lib/cities';
+import { getCityBySlug, ALL_CITY_SLUGS, CITIES, type City } from '@/lib/cities';
 import {
   buildServiceSchema,
   buildBreadcrumbSchema,
@@ -128,6 +128,17 @@ export default function CityServicePage({ params }: PageProps) {
   const pageUrl = `${BUSINESS_WEBSITE}/service-areas/${params.city}`;
   const faqs = buildCityFAQs(city);
   const hasLocationPage = (ALL_LOCATION_SLUGS as string[]).includes(params.city);
+
+  // Nearby cities: same county first, then closest by distanceMiles
+  const nearbyCities = CITIES
+    .filter((c) => c.slug !== params.city)
+    .sort((a, b) => {
+      const sameCountyA = a.county === city.county ? 0 : 1;
+      const sameCountyB = b.county === city.county ? 0 : 1;
+      if (sameCountyA !== sameCountyB) return sameCountyA - sameCountyB;
+      return Math.abs(a.distanceMiles - city.distanceMiles) - Math.abs(b.distanceMiles - city.distanceMiles);
+    })
+    .slice(0, 8);
 
   const serviceSchema = buildServiceSchema({
     name: `Locksmith Services in ${city.name}, ${city.state}`,
@@ -380,6 +391,40 @@ export default function CityServicePage({ params }: PageProps) {
       </section>
 
       <FAQSection faqs={faqs} title={`Locksmith ${city.name}, ${city.stateShort} — Frequently Asked Questions`} subtitle={`Common questions about locksmith service in ${city.name} and ${city.county}.`} />
+
+      {/* Nearby cities — geographic cluster internal linking */}
+      {nearbyCities.length > 0 && (
+        <section className="section-pad bg-white border-t border-slate-100">
+          <div className="container-custom">
+            <h2 className="section-title mb-2 text-center">
+              Other Cities Near {city.name} We Serve
+            </h2>
+            <p className="text-center text-slate-600 mb-8 max-w-xl mx-auto text-sm">
+              We regularly serve all of {city.county} and surrounding areas. Click any city for local service details.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {nearbyCities.map((nearby) => (
+                <Link
+                  key={nearby.slug}
+                  href={`/service-areas/${nearby.slug}`}
+                  className="card p-4 group hover:border-blue-200 hover:bg-blue-50/40 transition-all text-center"
+                >
+                  <p className="font-semibold text-slate-800 text-sm group-hover:text-blue-600 leading-tight">
+                    {nearby.name}, {nearby.stateShort}
+                  </p>
+                  <p className="text-xs text-slate-400 mt-0.5">{nearby.county}</p>
+                  <p className="text-xs text-blue-600 mt-1 font-medium">~{nearby.distanceMiles} mi</p>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <Link href="/service-areas" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 text-sm">
+                View All 120+ Indiana Service Areas →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section-pad bg-blue-900 text-white">
         <div className="container-custom text-center">
