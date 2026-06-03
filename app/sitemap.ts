@@ -87,7 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  // ─── Tier 6 — programmatic service×location pages (84 pages) ───────────────
+  // ─── Tier 6 — programmatic service×location pages (6 services × 36 locations = 216 pages) ─────
   // Kokomo + emergency get highest priority; others get 0.65
   const programmaticPages: MetadataRoute.Sitemap = ALL_SERVICE_SLUGS.flatMap((service) =>
     ALL_LOCATION_SLUGS.map((location) => ({

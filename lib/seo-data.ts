@@ -24,7 +24,42 @@ export type LocationSlug =
   | 'converse-in'
   | 'marion-in'
   | 'elwood-in'
-  | 'wabash-in';
+  | 'wabash-in'
+  // Madison County
+  | 'anderson-in'
+  // Hamilton County
+  | 'noblesville-in'
+  | 'carmel-in'
+  | 'fishers-in'
+  | 'westfield-in'
+  // Marion County / Indianapolis
+  | 'indianapolis-in'
+  // Hendricks County
+  | 'avon-in'
+  | 'brownsburg-in'
+  | 'plainfield-in'
+  // Johnson County
+  | 'greenwood-in'
+  | 'franklin-in'
+  // Hancock County
+  | 'greenfield-in'
+  // Shelby County
+  | 'shelbyville-in'
+  // Morgan County
+  | 'martinsville-in'
+  // Lake County (NW Indiana)
+  | 'hammond-in'
+  | 'gary-in'
+  | 'merrillville-in'
+  | 'munster-in'
+  // Porter County
+  | 'valparaiso-in'
+  // LaPorte County
+  | 'michigan-city-in'
+  // Clark County (Southern IN)
+  | 'jeffersonville-in'
+  // Floyd County (Southern IN)
+  | 'new-albany-in';
 
 export interface FAQItem {
   question: string;
@@ -86,6 +121,41 @@ export const ALL_LOCATION_SLUGS: LocationSlug[] = [
   'marion-in',
   'elwood-in',
   'wabash-in',
+  // Madison County
+  'anderson-in',
+  // Hamilton County
+  'noblesville-in',
+  'carmel-in',
+  'fishers-in',
+  'westfield-in',
+  // Marion County / Indianapolis
+  'indianapolis-in',
+  // Hendricks County
+  'avon-in',
+  'brownsburg-in',
+  'plainfield-in',
+  // Johnson County
+  'greenwood-in',
+  'franklin-in',
+  // Hancock County
+  'greenfield-in',
+  // Shelby County
+  'shelbyville-in',
+  // Morgan County
+  'martinsville-in',
+  // Lake County (NW Indiana)
+  'hammond-in',
+  'gary-in',
+  'merrillville-in',
+  'munster-in',
+  // Porter County
+  'valparaiso-in',
+  // LaPorte County
+  'michigan-city-in',
+  // Clark County (Southern IN)
+  'jeffersonville-in',
+  // Floyd County (Southern IN)
+  'new-albany-in',
 ];
 
 // ─── Location data ─────────────────────────────────────────────────────────────
@@ -287,6 +357,340 @@ export const LOCATION_DATA: Record<LocationSlug, LocationSEOData> = {
     neighborhoods: ['Downtown Wabash', 'North Wabash', 'South Side', 'East End', 'Wabash Riverfront'],
     description: 'Wabash, the county seat of Wabash County, holds the distinction of being the first electrically lit city in the world (1880).',
     wikiUrl: 'https://en.wikipedia.org/wiki/Wabash,_Indiana',
+  },
+
+  // ── Madison County ────────────────────────────────────────────────────────
+  'anderson-in': {
+    slug: 'anderson-in',
+    name: 'Anderson',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Madison County',
+    responseTime: '35–50 minutes',
+    distanceMiles: 38,
+    population: 54000,
+    landmarks: ['Reardon Auditorium', 'Anderson University', 'Mounds State Park', 'Madison County Courthouse'],
+    neighborhoods: ['Downtown Anderson', 'Scatterfield Road Corridor', 'Edgewood', 'North Anderson', 'Pendleton Pike Area'],
+    description: 'Anderson is the seat of Madison County in central Indiana, home to Anderson University and Mounds State Park.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Anderson,_Indiana',
+  },
+
+  // ── Hamilton County ───────────────────────────────────────────────────────
+  'noblesville-in': {
+    slug: 'noblesville-in',
+    name: 'Noblesville',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hamilton County',
+    responseTime: '45–60 minutes',
+    distanceMiles: 55,
+    population: 75000,
+    landmarks: ['Hamilton County Courthouse', 'Ruoff Music Center', 'Logan Street District', 'Federal Hill Commons', 'Potter\'s Bridge Park'],
+    neighborhoods: ['Downtown Noblesville', 'Hazel Dell', 'River Road Corridor', 'Prairie Lakes', 'South Harbour'],
+    description: 'Noblesville is the seat of Hamilton County, one of Indiana\'s fastest-growing cities with a charming historic downtown square.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Noblesville,_Indiana',
+  },
+  'carmel-in': {
+    slug: 'carmel-in',
+    name: 'Carmel',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hamilton County',
+    responseTime: '50–65 minutes',
+    distanceMiles: 60,
+    population: 110000,
+    landmarks: ['Carmel Arts & Design District', 'The Palladium Concert Hall', 'Monon Trail', 'Brookshire Golf Club', 'Clay Terrace'],
+    neighborhoods: ['Arts & Design District', 'West Clay', 'Village of WestClay', 'Crooked Stick', 'Bridgewater Club'],
+    description: 'Carmel is one of Indiana\'s largest and most affluent cities, consistently ranked among the best places to live in the US.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Carmel,_Indiana',
+  },
+  'fishers-in': {
+    slug: 'fishers-in',
+    name: 'Fishers',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hamilton County',
+    responseTime: '50–65 minutes',
+    distanceMiles: 65,
+    population: 105000,
+    landmarks: ['Fishers District', 'Conner Prairie Interactive History Park', 'IKEA', 'Nickel Plate District Amphitheater', 'HSE Schools'],
+    neighborhoods: ['Nickel Plate District', 'Geist Reservoir Area', '116th Street Corridor', 'Del Lago', 'Saxony'],
+    description: 'Fishers is a rapidly growing Hamilton County city northeast of Indianapolis, known for its tech corridor and top-ranked schools.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Fishers,_Indiana',
+  },
+  'westfield-in': {
+    slug: 'westfield-in',
+    name: 'Westfield',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hamilton County',
+    responseTime: '50–65 minutes',
+    distanceMiles: 62,
+    population: 45000,
+    landmarks: ['Grand Park Sports Campus', 'Westfield Washington Schools', 'Monon Trail', 'Shamrock Springs Elementary', 'Spring Mill Road Corridor'],
+    neighborhoods: ['Historic Downtown Westfield', 'Spring Mill Crossing', 'Chatham Hills', 'Carey Road Area', 'Cool Creek'],
+    description: 'Westfield is a booming Hamilton County community home to Grand Park, one of the largest youth sports campuses in the nation.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Westfield,_Indiana',
+  },
+
+  // ── Marion County / Indianapolis ──────────────────────────────────────────
+  'indianapolis-in': {
+    slug: 'indianapolis-in',
+    name: 'Indianapolis',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Marion County',
+    responseTime: '55–75 minutes',
+    distanceMiles: 55,
+    population: 900000,
+    landmarks: ['Monument Circle', 'Lucas Oil Stadium', 'Bankers Life Fieldhouse', 'Indianapolis Motor Speedway', 'Children\'s Museum of Indianapolis', 'White River State Park'],
+    neighborhoods: ['Downtown Indianapolis', 'Broad Ripple', 'Fountain Square', 'Irvington', 'Meridian-Kessler', 'Speedway', 'Lawrence', 'Warren Township'],
+    description: 'Indianapolis is the state capital and largest city in Indiana, a major Midwestern metro and home of the Indianapolis 500.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Indianapolis',
+  },
+
+  // ── Hendricks County ──────────────────────────────────────────────────────
+  'avon-in': {
+    slug: 'avon-in',
+    name: 'Avon',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hendricks County',
+    responseTime: '60–75 minutes',
+    distanceMiles: 68,
+    population: 20000,
+    landmarks: ['Avon Town Hall Park', 'White Lick Creek Trail', 'Avon Middle School South', 'US 36 Corridor', 'Hendricks County 4-H Fairgrounds'],
+    neighborhoods: ['Central Avon', 'Prestwick', 'Eagle Glen', 'Kingsborough', 'Avon Farms'],
+    description: 'Avon is one of the fastest-growing towns in Indiana, a western Indianapolis suburb in Hendricks County with top-rated schools.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Avon,_Indiana',
+  },
+  'brownsburg-in': {
+    slug: 'brownsburg-in',
+    name: 'Brownsburg',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hendricks County',
+    responseTime: '60–75 minutes',
+    distanceMiles: 67,
+    population: 28000,
+    landmarks: ['Brownsburg Raceway Park', 'Eagle Creek Reservoir (nearby)', 'Main Street District', 'Lincoln Park', 'Hendricks Regional Health'],
+    neighborhoods: ['Historic Downtown Brownsburg', 'Arbor Grove', 'North Green', 'Creekside', 'Windgate'],
+    description: 'Brownsburg is an award-winning Hendricks County town known for its proximity to Indianapolis Motor Speedway and excellent schools.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Brownsburg,_Indiana',
+  },
+  'plainfield-in': {
+    slug: 'plainfield-in',
+    name: 'Plainfield',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hendricks County',
+    responseTime: '65–80 minutes',
+    distanceMiles: 70,
+    population: 34000,
+    landmarks: ['Plainfield Recreation & Aquatic Center', 'Vandalia Trail', 'Quaker Trace Trail', 'Plainfield High School', 'Indianapolis International Airport (adjacent)'],
+    neighborhoods: ['Historic Plainfield', 'Stafford Road Corridor', 'Guilford Park', 'Glenbrook', 'Meadow Creek'],
+    description: 'Plainfield is a thriving Hendricks County community adjacent to Indianapolis International Airport, with a blend of residential and commercial growth.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Plainfield,_Indiana',
+  },
+
+  // ── Johnson County ────────────────────────────────────────────────────────
+  'greenwood-in': {
+    slug: 'greenwood-in',
+    name: 'Greenwood',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Johnson County',
+    responseTime: '65–80 minutes',
+    distanceMiles: 73,
+    population: 65000,
+    landmarks: ['Greenwood Park Mall', 'Indy South Greenwood Airport', 'Freedom Springs Aquatic Park', 'Old Town Greenwood', 'Sugargrove Nature Area'],
+    neighborhoods: ['Old Town Greenwood', 'Worthsville Road Corridor', 'South Madison Avenue', 'Stones Crossing', 'Westside'],
+    description: 'Greenwood is one of the largest cities in Johnson County, a southern Indianapolis suburb with Greenwood Park Mall as its commercial anchor.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Greenwood,_Indiana',
+  },
+  'franklin-in': {
+    slug: 'franklin-in',
+    name: 'Franklin',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Johnson County',
+    responseTime: '65–80 minutes',
+    distanceMiles: 76,
+    population: 26000,
+    landmarks: ['Johnson County Courthouse', 'Franklin College', 'Artcraft Theatre', 'Aiken Park', 'Driftwood River'],
+    neighborhoods: ['Downtown Franklin', 'North Franklin', 'College Avenue Corridor', 'Eastside', 'South Franklin'],
+    description: 'Franklin is the county seat of Johnson County, home to Franklin College and a revitalized historic downtown with the iconic Artcraft Theatre.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Franklin,_Indiana',
+  },
+
+  // ── Hancock County ────────────────────────────────────────────────────────
+  'greenfield-in': {
+    slug: 'greenfield-in',
+    name: 'Greenfield',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Hancock County',
+    responseTime: '60–75 minutes',
+    distanceMiles: 65,
+    population: 23000,
+    landmarks: ['Hancock County Courthouse', 'James Whitcomb Riley Birthplace', 'Riley Park', 'Greenfield Central High School', 'Sugar Creek Trail'],
+    neighborhoods: ['Downtown Greenfield', 'North Greenfield', 'Riley Square', 'Eastwood', 'Brandywine'],
+    description: 'Greenfield is the seat of Hancock County and birthplace of poet James Whitcomb Riley, with a growing community east of Indianapolis.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Greenfield,_Indiana',
+  },
+
+  // ── Shelby County ─────────────────────────────────────────────────────────
+  'shelbyville-in': {
+    slug: 'shelbyville-in',
+    name: 'Shelbyville',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Shelby County',
+    responseTime: '65–80 minutes',
+    distanceMiles: 68,
+    population: 20000,
+    landmarks: ['Shelby County Courthouse', 'Grover Museum', 'Blue River', 'Shelbyville High School', 'The Strand Theatre'],
+    neighborhoods: ['Downtown Shelbyville', 'North Side', 'East Shelbyville', 'Miller Drive Corridor', 'Westside'],
+    description: 'Shelbyville is the seat of Shelby County, a historic Indiana town along Blue River with a classic downtown courthouse square.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Shelbyville,_Indiana',
+  },
+
+  // ── Morgan County ─────────────────────────────────────────────────────────
+  'martinsville-in': {
+    slug: 'martinsville-in',
+    name: 'Martinsville',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Morgan County',
+    responseTime: '70–85 minutes',
+    distanceMiles: 77,
+    population: 12000,
+    landmarks: ['Morgan County Courthouse', 'Morgan-Monroe State Forest', 'Artesian Spring Park', 'Martinsville High School', 'White River'],
+    neighborhoods: ['Downtown Martinsville', 'Artesian Avenue District', 'North Martinsville', 'East Side', 'Morgan Street Corridor'],
+    description: 'Martinsville is the seat of Morgan County in south-central Indiana, known for its artesian water springs and access to Morgan-Monroe State Forest.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Martinsville,_Indiana',
+  },
+
+  // ── Lake County (NW Indiana) ──────────────────────────────────────────────
+  'hammond-in': {
+    slug: 'hammond-in',
+    name: 'Hammond',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Lake County',
+    responseTime: '105–130 minutes',
+    distanceMiles: 118,
+    population: 75000,
+    landmarks: ['Wolf Lake Memorial Park', 'Hammond Civic Center', 'Purdue University Northwest (Hammond)', 'State Line Road', 'Calumet River'],
+    neighborhoods: ['Downtown Hammond', 'Hessville', 'Robertsdale', 'Woodmar', 'Calumet District'],
+    description: 'Hammond is the largest city in Lake County in northwest Indiana, bordering Chicago and serving as a major Calumet Region hub.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Hammond,_Indiana',
+  },
+  'gary-in': {
+    slug: 'gary-in',
+    name: 'Gary',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Lake County',
+    responseTime: '105–125 minutes',
+    distanceMiles: 115,
+    population: 70000,
+    landmarks: ['Gary/Chicago International Airport', 'Indiana Dunes National Park (nearby)', 'Genesis Convention Center', 'Hard Rock Casino Northern Indiana', 'US Steel Yard'],
+    neighborhoods: ['Downtown Gary', 'Miller Beach', 'Glen Park', 'Tolleston', 'Black Oak'],
+    description: 'Gary is a Lake County city on the southern shore of Lake Michigan, known for its steel industry heritage and proximity to Indiana Dunes National Park.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Gary,_Indiana',
+  },
+  'merrillville-in': {
+    slug: 'merrillville-in',
+    name: 'Merrillville',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Lake County',
+    responseTime: '100–120 minutes',
+    distanceMiles: 112,
+    population: 35000,
+    landmarks: ['Southlake Mall', 'Hard Rock Casino Northern Indiana', 'US 30 Corridor', 'Taft Street Business District', 'Deep River Waterpark'],
+    neighborhoods: ['Central Merrillville', 'Southlake Area', 'US 30 Corridor', 'Northeast Merrillville', 'Deep River'],
+    description: 'Merrillville is a major commercial hub in Lake County, home to Southlake Mall and the Hard Rock Casino Northern Indiana.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Merrillville,_Indiana',
+  },
+  'munster-in': {
+    slug: 'munster-in',
+    name: 'Munster',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Lake County',
+    responseTime: '105–125 minutes',
+    distanceMiles: 117,
+    population: 22000,
+    landmarks: ['Centennial Park', 'Community Healthcare System', 'Munster High School', 'Ridge Road Corridor', 'White Oak Avenue District'],
+    neighborhoods: ['Central Munster', 'Ridge Road Corridor', 'Willow Creek', 'Calumet Village', 'South Munster'],
+    description: 'Munster is an upscale Lake County suburb near the Illinois border, known for excellent schools and a strong community identity.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Munster,_Indiana',
+  },
+
+  // ── Porter County ─────────────────────────────────────────────────────────
+  'valparaiso-in': {
+    slug: 'valparaiso-in',
+    name: 'Valparaiso',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Porter County',
+    responseTime: '95–115 minutes',
+    distanceMiles: 105,
+    population: 32000,
+    landmarks: ['Valparaiso University', 'Downtown Valparaiso', 'Central Park Plaza', 'Ogden Gardens', 'Indiana Dunes National Park (nearby)'],
+    neighborhoods: ['Downtown Valparaiso', 'East Valparaiso', 'North Side', 'Valparaiso University Area', 'South Valpo'],
+    description: 'Valparaiso is the county seat of Porter County in northwest Indiana, home to Valparaiso University and a vibrant downtown near the Indiana Dunes.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Valparaiso,_Indiana',
+  },
+
+  // ── LaPorte County ────────────────────────────────────────────────────────
+  'michigan-city-in': {
+    slug: 'michigan-city-in',
+    name: 'Michigan City',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'LaPorte County',
+    responseTime: '100–120 minutes',
+    distanceMiles: 108,
+    population: 28000,
+    landmarks: ['Indiana Dunes National Park', 'Washington Park Zoo', 'Blue Chip Casino', 'Michigan City Lighthouse', 'Trail Creek'],
+    neighborhoods: ['Downtown Michigan City', 'Elston Grove', 'Edgewater', 'Pine Lake Area', 'Long Beach'],
+    description: 'Michigan City is LaPorte County\'s largest city on the southern shore of Lake Michigan, a destination for Indiana Dunes tourism and gaming.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Michigan_City,_Indiana',
+  },
+
+  // ── Clark County (Southern Indiana) ──────────────────────────────────────
+  'jeffersonville-in': {
+    slug: 'jeffersonville-in',
+    name: 'Jeffersonville',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Clark County',
+    responseTime: '160–185 minutes',
+    distanceMiles: 175,
+    population: 50000,
+    landmarks: ['Big Four Bridge', 'Howard Steamboat Museum', 'Schimpff\'s Confectionery', 'Jeffersonville Town Center', 'Ohio River Greenway'],
+    neighborhoods: ['Downtown Jeffersonville', 'Utica Pike Corridor', 'Galena', 'Spring Hills', 'Riverside'],
+    description: 'Jeffersonville is the largest city in Clark County in southern Indiana, across the Ohio River from Louisville, Kentucky.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/Jeffersonville,_Indiana',
+  },
+
+  // ── Floyd County (Southern Indiana) ──────────────────────────────────────
+  'new-albany-in': {
+    slug: 'new-albany-in',
+    name: 'New Albany',
+    state: 'Indiana',
+    stateShort: 'IN',
+    county: 'Floyd County',
+    responseTime: '170–195 minutes',
+    distanceMiles: 182,
+    population: 38000,
+    landmarks: ['Floyd County Courthouse', 'Culbertson Mansion State Historic Site', 'New Albany Downtown', 'Ohio River Greenway', 'IU Southeast Campus'],
+    neighborhoods: ['Downtown New Albany', 'Midtown', 'Fairmont', 'Silver Hills', 'Georgetown Road Corridor'],
+    description: 'New Albany is the seat of Floyd County in southern Indiana, a historic river city across from Louisville undergoing a downtown renaissance.',
+    wikiUrl: 'https://en.wikipedia.org/wiki/New_Albany,_Indiana',
   },
 };
 
