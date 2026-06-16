@@ -189,6 +189,7 @@ export default function Footer() {
               { href: '/faq', label: 'Locksmith FAQ' },
               { href: '/kokomo-indiana', label: 'Kokomo Indiana Guide' },
               { href: '/blog', label: 'Locksmith Blog' },
+              { href: '/partners', label: 'Trusted Partners' },
             ].map((link) => (
               <Link
                 key={link.href}
@@ -198,6 +199,24 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Trusted Partner Network — do-follow branded backlink to sister location */}
+      <div className="border-t border-slate-800 py-5">
+        <div className="container-custom">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Trusted Partner Location:</p>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
+            <span className="text-xs text-slate-500">Need a locksmith in Florida?</span>
+            <a
+              href="https://affordablelocksmithorlando.com/"
+              className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-medium"
+              title="Affordable Locksmith Orlando — Trusted Partner"
+            >
+              affordable locksmith orlando
+            </a>
+            <span className="text-xs text-slate-600">— 24/7 licensed locksmith serving the greater Orlando metro area.</span>
           </div>
         </div>
       </div>

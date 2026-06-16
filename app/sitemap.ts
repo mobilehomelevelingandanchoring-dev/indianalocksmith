@@ -123,6 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BUSINESS_WEBSITE}/service-areas` },
     { url: `${BUSINESS_WEBSITE}/contact` },
     { url: `${BUSINESS_WEBSITE}/about` },
+    { url: `${BUSINESS_WEBSITE}/partners` },
   ].map((entry) => ({
     ...entry,
     lastModified: SITE_LAUNCH,

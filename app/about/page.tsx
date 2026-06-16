@@ -167,6 +167,53 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Trusted Partner Network */}
+      <section className="section-pad bg-slate-50 border-y border-slate-100">
+        <div className="container-custom max-w-4xl">
+          <div className="text-center mb-10">
+            <h2 className="section-title">Trusted Partner Network</h2>
+            <p className="section-subtitle mx-auto mt-4">
+              We partner with like-minded, licensed locksmith businesses across the country who share our commitment to honest pricing, fast response, and professional service.
+            </p>
+          </div>
+          <div className="card p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="bg-blue-600 text-white p-4 rounded-2xl shrink-0">
+              <MapPin className="h-8 w-8" />
+            </div>
+            <div className="flex-1">
+              <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Partner Location — Florida</p>
+              <h3 className="text-xl font-black text-slate-900 mb-2">
+                <a
+                  href="https://affordablelocksmithorlando.com/"
+                  className="hover:text-blue-600 transition-colors"
+                  title="Affordable Locksmith Orlando"
+                >
+                  affordable locksmith orlando
+                </a>
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-3">
+                Florida state-licensed locksmith serving Orlando and 11 surrounding communities — Winter Park, Kissimmee, Apopka, Sanford, Altamonte Springs, and more. Available 24/7 with 20–30 minute response times, upfront pricing, and background-checked technicians. Specializing in residential, automotive, commercial, and emergency locksmith services.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://affordablelocksmithorlando.com/"
+                  className="inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                >
+                  Visit affordablelocksmithorlando.com →
+                </a>
+                <span className="text-slate-300">|</span>
+                <span className="text-sm text-slate-500">License: FL-LIC-2024-LOCK</span>
+                <span className="text-slate-300">|</span>
+                <span className="text-sm text-slate-500">4.8★ Verified Reviews</span>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-sm text-slate-400 mt-6">
+            Traveling to Florida from Indiana? Our trusted partner — <a href="https://affordablelocksmithorlando.com/" className="text-blue-500 hover:text-blue-600 transition-colors">affordable locksmith orlando</a> — delivers the same standard of service you expect from us, in the Orlando metro area.
+          </p>
+        </div>
+      </section>
+
       <Testimonials />
     </>
   );
