@@ -147,7 +147,7 @@ const servicesData = [
 const howToSteps = [
   { step: 1, title: 'Move to a safe, well-lit area', detail: 'Stay near your vehicle or building entrance. If it is dark, find the nearest lit area — a store, gas station, or streetlight. Do not walk down unlit streets alone at night in Kokomo.' },
   { step: 2, title: 'Check for unlocked entry points', detail: 'Quickly check other doors, windows, or a garage door. Only attempt entry on property you own or rent. Never force entry — modern locks resist this and you will damage the door or lock.' },
-  { step: 3, title: 'Call a trusted local locksmith', detail: 'Call Affordable Locksmith at (855) 633-0750 — a real person answers immediately 24/7. Give your exact location and a brief description of the situation. We will confirm our arrival time and price before dispatching.' },
+  { step: 3, title: 'Call a trusted local locksmith', detail: 'Call Affordable Locksmith at (833) 632-3357 — a real person answers immediately 24/7. Give your exact location and a brief description of the situation. We will confirm our arrival time and price before dispatching.' },
   { step: 4, title: 'Have your ID ready', detail: 'For home lockouts, have a photo ID with the address. For car lockouts, have your vehicle registration or title. A professional locksmith will always verify ownership before opening a property — this protects you.' },
   { step: 5, title: 'Wait safely for the technician', detail: 'Stay visible and in a safe area. Let someone you trust know your location. If you feel unsafe, call 911. Our technician arrives in a marked vehicle and introduces themselves with ID.' },
   { step: 6, title: 'Review the written price quote', detail: 'Before any work begins, you receive a specific price. Review it. There are no hidden charges, service fees, or surprises. Once you approve, the locksmith completes the work — typically in 10–30 minutes.' },
@@ -212,7 +212,7 @@ export default function LocksmithGuideKokomoPage() {
               <div className="bg-white/10 border border-white/20 rounded-xl p-5 mb-6">
                 <p className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-2">Quick Answer</p>
                 <p className="text-blue-50 leading-relaxed speakable-summary">
-                  A locksmith in Kokomo Indiana costs <strong>$45–$150</strong> for most services. Emergency service is available <strong>24/7</strong> with <strong>15–30 minute</strong> response. Car lockouts start at $45, rekeying at $25/lock, transponder keys at $75. Call <strong>(855) 633-0750</strong> any time — real person answers immediately.
+                  A locksmith in Kokomo Indiana costs <strong>$45–$150</strong> for most services. Emergency service is available <strong>24/7</strong> with <strong>15–30 minute</strong> response. Car lockouts start at $45, rekeying at $25/lock, transponder keys at $75. Call <strong>(833) 632-3357</strong> any time — real person answers immediately.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">

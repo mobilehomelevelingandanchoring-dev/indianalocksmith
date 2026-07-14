@@ -93,7 +93,7 @@ export default function OgImage() {
               borderRadius: 50,
             }}
           >
-            (855) 633-0750
+            (833) 632-3357
           </div>
           <div style={{ color: '#dbeafe', fontSize: 22 }}>
             39+ Years Experience • 24/7 Emergency

@@ -6,9 +6,9 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE } from '@
 import { CITIES } from '@/lib/cities';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Service Areas Indiana | 120+ Cities Served | (855) 633-0750',
+  title: 'Locksmith Service Areas Indiana | 120+ Cities Served | (833) 632-3357',
   description:
-    'Affordable Locksmith serves Kokomo, Indiana and 120+ surrounding communities statewide — Hamilton County, Hendricks County, Johnson County, Lake County, Marion County (Indianapolis), and Southern Indiana. Mobile locksmith, no tow-in required. Call (855) 633-0750.',
+    'Affordable Locksmith serves Kokomo, Indiana and 120+ surrounding communities statewide — Hamilton County, Hendricks County, Johnson County, Lake County, Marion County (Indianapolis), and Southern Indiana. Mobile locksmith, no tow-in required. Call (833) 632-3357.',
   keywords: [
     'locksmith service areas Indiana', 'mobile locksmith Indiana', 'locksmith near me Indiana',
     'Howard County locksmith', 'Hamilton County locksmith', 'Marion County locksmith',

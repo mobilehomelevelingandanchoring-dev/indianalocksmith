@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const city = getCityBySlug(params.city);
   if (!city) return {};
 
-  const title = `Locksmith ${city.name}, ${city.stateShort} | Mobile Locksmith 24/7 | (855) 633-0750`;
-  const description = `Looking for a locksmith in ${city.name}, ${city.state}? Affordable Locksmith dispatches from Kokomo — ${city.distanceMiles} miles away, ~${city.distanceMiles + 10}–${city.distanceMiles + 25} min response. Car lockouts, home lockouts, key programming, 24/7 emergency. Call (855) 633-0750.`;
+  const title = `Locksmith ${city.name}, ${city.stateShort} | Mobile Locksmith 24/7 | (833) 632-3357`;
+  const description = `Looking for a locksmith in ${city.name}, ${city.state}? Affordable Locksmith dispatches from Kokomo — ${city.distanceMiles} miles away, ~${city.distanceMiles + 10}–${city.distanceMiles + 25} min response. Car lockouts, home lockouts, key programming, 24/7 emergency. Call (833) 632-3357.`;
   const canonical = `${BUSINESS_WEBSITE}/service-areas/${params.city}`;
 
   return {
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: { canonical },
     openGraph: {
       title: `Locksmith ${city.name}, ${city.stateShort} | Affordable Locksmith`,
-      description: `Mobile locksmith serving ${city.name}, ${city.state}. Fast response, honest pricing, 24/7 emergency service. Call (855) 633-0750.`,
+      description: `Mobile locksmith serving ${city.name}, ${city.state}. Fast response, honest pricing, 24/7 emergency service. Call (833) 632-3357.`,
       url: canonical,
       type: 'website',
     },
@@ -83,7 +83,7 @@ function buildCityFAQs(city: City) {
   return [
     {
       question: `Who is the best locksmith in ${city.name}, Indiana?`,
-      answer: `Affordable Locksmith is a trusted mobile locksmith serving ${city.name} and surrounding ${city.county}. Based in Kokomo, Indiana with ${BUSINESS_YEARS_EXPERIENCE}+ years of experience, we provide car lockouts, home lockouts, key programming, rekeying, and 24/7 emergency locksmith service to ${city.name} residents and businesses. Call (855) 633-0750 any time.`,
+      answer: `Affordable Locksmith is a trusted mobile locksmith serving ${city.name} and surrounding ${city.county}. Based in Kokomo, Indiana with ${BUSINESS_YEARS_EXPERIENCE}+ years of experience, we provide car lockouts, home lockouts, key programming, rekeying, and 24/7 emergency locksmith service to ${city.name} residents and businesses. Call (833) 632-3357 any time.`,
     },
     {
       question: `How fast can a locksmith arrive in ${city.name}, ${city.stateShort}?`,
@@ -95,7 +95,7 @@ function buildCityFAQs(city: City) {
     },
     {
       question: `Is there a 24/7 emergency locksmith available in ${city.name}?`,
-      answer: `Yes. Affordable Locksmith responds to emergencies in ${city.name} around the clock — including late nights, weekends, and holidays. Call (855) 633-0750 any time. We give you an honest arrival estimate (typically ${arrivalMin}–${arrivalMax} minutes) and confirm pricing before dispatching.`,
+      answer: `Yes. Affordable Locksmith responds to emergencies in ${city.name} around the clock — including late nights, weekends, and holidays. Call (833) 632-3357 any time. We give you an honest arrival estimate (typically ${arrivalMin}–${arrivalMax} minutes) and confirm pricing before dispatching.`,
     },
     {
       question: `Can a locksmith program a car key in ${city.name}, IN?`,
@@ -107,7 +107,7 @@ function buildCityFAQs(city: City) {
     },
     {
       question: `Does Affordable Locksmith serve all of ${city.county}?`,
-      answer: `Yes. While our dispatch base is in Kokomo, we regularly serve all of ${city.county} including ${city.name} and surrounding communities. Call (855) 633-0750 — we confirm we can reach you and provide an honest arrival estimate before you commit to anything.`,
+      answer: `Yes. While our dispatch base is in Kokomo, we regularly serve all of ${city.county} including ${city.name} and surrounding communities. Call (833) 632-3357 — we confirm we can reach you and provide an honest arrival estimate before you commit to anything.`,
     },
   ];
 }

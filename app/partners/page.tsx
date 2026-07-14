@@ -22,7 +22,7 @@ const partners = [
     city: 'Orlando',
     state: 'Florida',
     stateShort: 'FL',
-    phone: '(855) 633-0750',
+    phone: '(833) 632-3357',
     license: 'FL-LIC-2024-LOCK',
     rating: '4.8',
     reviews: '56+',
@@ -196,7 +196,7 @@ export default function PartnersPage() {
                     Visit {partner.displayName}
                   </a>
                   <a
-                    href={`tel:+18556330750`}
+                    href={`tel:+18336323357`}
                     className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-6 py-3 rounded-xl transition-colors"
                   >
                     <Phone className="h-4 w-4" />

@@ -8,9 +8,9 @@ import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from 
 import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
-  title: 'Key Services Kokomo IN | Key Cutting, Transponder Keys, Key Fobs | (855) 633-0750',
+  title: 'Key Services Kokomo IN | Key Cutting, Transponder Keys, Key Fobs | (833) 632-3357',
   description:
-    'Professional key services in Kokomo, Indiana. Key cutting, transponder key programming, key fob replacement, high-security key duplication. Affordable pricing. Call (855) 633-0750.',
+    'Professional key services in Kokomo, Indiana. Key cutting, transponder key programming, key fob replacement, high-security key duplication. Affordable pricing. Call (833) 632-3357.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/key-services` },
 };
 

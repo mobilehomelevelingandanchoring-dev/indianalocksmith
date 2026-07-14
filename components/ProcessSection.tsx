@@ -7,7 +7,7 @@ const steps = [
     icon: Phone,
     title: 'Call or Text Us',
     description:
-      'Reach us at (855) 633-0750 any time, day or night. We answer immediately — no hold music, no automated menus, no call centers.',
+      'Reach us at (833) 632-3357 any time, day or night. We answer immediately — no hold music, no automated menus, no call centers.',
     color: 'bg-blue-600',
   },
   {

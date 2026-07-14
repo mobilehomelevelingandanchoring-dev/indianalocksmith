@@ -9,12 +9,12 @@ import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from 
 import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
-  title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (855) 633-0750',
+  title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (833) 632-3357',
   description:
-    'Looking for an automotive locksmith in Kokomo Indiana? Affordable Locksmith provides auto locksmith services — car lockouts, transponder key programming, key fob replacement, ignition repair. 15–30 min response. Call (855) 633-0750.',
+    'Looking for an automotive locksmith in Kokomo Indiana? Affordable Locksmith provides auto locksmith services — car lockouts, transponder key programming, key fob replacement, ignition repair. 15–30 min response. Call (833) 632-3357.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/automotive-locksmith` },
   openGraph: {
-    title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (855) 633-0750',
+    title: 'Automotive Locksmith Kokomo Indiana | Auto Locksmith & Car Lockout | (833) 632-3357',
     description: 'Expert auto locksmith and car lockout services in Kokomo Indiana. Transponder keys, key fobs, ignition repair. 24/7 available.',
   },
 };
