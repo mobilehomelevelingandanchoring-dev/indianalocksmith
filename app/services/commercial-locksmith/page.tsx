@@ -8,9 +8,9 @@ import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from 
 import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
-  title: 'Commercial Locksmith Kokomo IN | Access Control, Master Keys | (833) 632-3357',
+  title: 'Commercial Locksmith Kokomo IN | Access Control, Master Keys | (575) 573-2625',
   description:
-    'Commercial locksmith services in Kokomo, Indiana. Access control systems, master key systems, panic bars, high-security locks, and business lockouts. Call (833) 632-3357.',
+    'Commercial locksmith services in Kokomo, Indiana. Access control systems, master key systems, panic bars, high-security locks, and business lockouts. Call (575) 573-2625.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/commercial-locksmith` },
 };
 

@@ -71,7 +71,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>The Bottom Line</h2>
 <p>The right locksmith combines local knowledge, honest pricing, verified credentials, and fast response. In Kokomo, Indiana, Affordable Locksmith has been that trusted professional since 1985. With over 15,000 jobs completed and hundreds of five-star reviews, we've earned our reputation one lock at a time.</p>
-<p>Next time you need a locksmith, don't gamble. Call us at (833) 632-3357.</p>
+<p>Next time you need a locksmith, don't gamble. Call us at (575) 573-2625.</p>
     `,
   },
   {
@@ -79,7 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Locked Out of Your Car in Kokomo? Here\'s Exactly What to Do',
     metaTitle: 'Locked Out of Your Car in Kokomo, IN? What to Do | Affordable Locksmith',
     metaDescription:
-      'Locked your keys inside your car in Kokomo, Indiana? Follow these steps to stay safe and get back on the road fast. Call (833) 632-3357 for 24/7 help.',
+      'Locked your keys inside your car in Kokomo, Indiana? Follow these steps to stay safe and get back on the road fast. Call (575) 573-2625 for 24/7 help.',
     excerpt:
       "A car lockout is stressful, but it doesn't have to be dangerous or expensive. Here's a step-by-step guide for what to do when you're locked out of your vehicle in Kokomo, IN.",
     datePublished: '2024-02-10',
@@ -121,7 +121,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Call a Local Kokomo Locksmith</h2>
-<p>If none of the above applies, calling a local locksmith is the fastest and most cost-effective solution. When you call Affordable Locksmith at (833) 632-3357, here's what happens:</p>
+<p>If none of the above applies, calling a local locksmith is the fastest and most cost-effective solution. When you call Affordable Locksmith at (575) 573-2625, here's what happens:</p>
 <ol>
 <li>We answer immediately—no hold music, no call centers</li>
 <li>We confirm your location and give you an honest arrival time estimate</li>
@@ -137,7 +137,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Keep a spare key with a trusted family member or friend</li>
 <li>Install a magnetic key holder under your vehicle (use with caution)</li>
 <li>Consider a keyless entry system—we install and program these</li>
-<li>Add our number to your contacts: <strong>(833) 632-3357</strong></li>
+<li>Add our number to your contacts: <strong>(575) 573-2625</strong></li>
 </ul>
 
 <h2>Affordable, Fast Car Lockout Service in Kokomo</h2>
@@ -200,7 +200,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>For larger homes or properties with multiple buildings, a master key system lets you have one key that opens everything while still maintaining separate keys for different areas. This is especially useful for homeowners with rental units or detached garages.</p>
 
 <h2>Get a Free Security Consultation in Kokomo</h2>
-<p>Not sure where to start? We offer security consultations for homeowners throughout Kokomo and Howard County. We'll walk through your property, identify vulnerabilities, and recommend cost-effective solutions. Call (833) 632-3357 to schedule yours.</p>
+<p>Not sure where to start? We offer security consultations for homeowners throughout Kokomo and Howard County. We'll walk through your property, identify vulnerabilities, and recommend cost-effective solutions. Call (575) 573-2625 to schedule yours.</p>
     `,
   },
   {
@@ -268,7 +268,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Lockouts don't respect business hours. If a manager gets locked out of your facility at 6 AM before opening, or your break-in alarm triggers at 2 AM, we're available 24/7 to respond anywhere in Howard County.</p>
 
 <h2>Schedule a Commercial Security Assessment</h2>
-<p>The best way to understand your business's security needs is a professional assessment. We'll walk your facility, identify vulnerabilities, and provide a written quote for recommended improvements—at no obligation. Call (833) 632-3357 or use our contact form to get started.</p>
+<p>The best way to understand your business's security needs is a professional assessment. We'll walk your facility, identify vulnerabilities, and provide a written quote for recommended improvements—at no obligation. Call (575) 573-2625 or use our contact form to get started.</p>
     `,
   },
   {
@@ -276,7 +276,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Emergency Locksmith Services in Kokomo: What to Expect and How to Stay Safe',
     metaTitle: 'Emergency Locksmith Kokomo, IN | 24/7 Response | Affordable Locksmith',
     metaDescription:
-      'Need an emergency locksmith in Kokomo, Indiana? Know what to expect, how to stay safe during a lockout, and how to get fast help. Available 24/7 at (833) 632-3357.',
+      'Need an emergency locksmith in Kokomo, Indiana? Know what to expect, how to stay safe during a lockout, and how to get fast help. Available 24/7 at (575) 573-2625.',
     excerpt:
       "Emergencies happen at the worst times. Whether you're locked out of your home, car, or business at 3 AM, here's how to handle it safely and get help fast in Kokomo.",
     datePublished: '2024-04-05',
@@ -311,7 +311,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>What to Expect When You Call</h2>
-<p>When you call Affordable Locksmith at (833) 632-3357, here's exactly what happens:</p>
+<p>When you call Affordable Locksmith at (575) 573-2625, here's exactly what happens:</p>
 <ol>
 <li><strong>Immediate answer.</strong> We don't use voicemail or answering services during emergencies. A real person answers.</li>
 <li><strong>Quick assessment.</strong> We ask for your location, the type of lockout, and any relevant details (car make/model for auto lockouts).</li>
@@ -330,7 +330,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Save Our Number Before You Need It</h2>
-<p>The worst time to search for a locksmith is when you're already in an emergency. Add <strong>(833) 632-3357</strong> to your contacts right now. We're here when you need us—day or night, rain or snow, holiday or not.</p>
+<p>The worst time to search for a locksmith is when you're already in an emergency. Add <strong>(575) 573-2625</strong> to your contacts right now. We're here when you need us—day or night, rain or snow, holiday or not.</p>
     `,
   },
   {
@@ -338,7 +338,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How Much Does Car Key Replacement Cost in Kokomo Indiana?',
     metaTitle: 'Car Key Replacement Cost in Kokomo Indiana | Locksmith vs Dealer 2025',
     metaDescription:
-      'Transponder key replacement in Kokomo Indiana costs $75–$150 at a locksmith vs $250–$400 at a dealer. Full cost breakdown by vehicle type. Call (833) 632-3357.',
+      'Transponder key replacement in Kokomo Indiana costs $75–$150 at a locksmith vs $250–$400 at a dealer. Full cost breakdown by vehicle type. Call (575) 573-2625.',
     excerpt:
       'Losing your car keys in Kokomo, Indiana can cost hundreds — or you can call an automotive locksmith and save 40–60% compared to dealership prices. Here is the complete cost breakdown.',
     datePublished: '2025-02-15',
@@ -396,13 +396,13 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Call Affordable Locksmith for Car Key Replacement in Kokomo</h2>
-<p>Affordable Locksmith provides on-site automotive key cutting and transponder programming throughout Kokomo, Indiana and Howard County. We carry programming equipment for most domestic and import vehicles. Call (833) 632-3357 any time — we confirm the exact price before dispatching and come to your location.</p>
+<p>Affordable Locksmith provides on-site automotive key cutting and transponder programming throughout Kokomo, Indiana and Howard County. We carry programming equipment for most domestic and import vehicles. Call (575) 573-2625 any time — we confirm the exact price before dispatching and come to your location.</p>
     `,
   },
   {
     slug: 'rekey-vs-replace-locks-kokomo-indiana',
     title: 'Rekey vs Replace Locks — What\'s Right for Your Kokomo Indiana Home?',
-    metaTitle: 'Rekey vs Replace Locks in Kokomo Indiana | Cost & When to Choose | (833) 632-3357',
+    metaTitle: 'Rekey vs Replace Locks in Kokomo Indiana | Cost & When to Choose | (575) 573-2625',
     metaDescription:
       'Should you rekey or replace locks in Kokomo Indiana? Rekeying costs $25–$45 per lock and takes 10 minutes. Replacing costs $85–$200. Expert guide to choosing the right option.',
     excerpt:
@@ -455,7 +455,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Yes — this is called "keying alike" and is one of the most practical home security improvements. When all your exterior locks respond to a single key, you eliminate the inconvenience of multiple keys. A locksmith can rekey all your existing locks in one visit to work with a single new key — as long as all locks are the same brand.</p>
 
 <h2>Call Affordable Locksmith for Rekeying or Lock Replacement in Kokomo</h2>
-<p>Affordable Locksmith provides same-day rekeying and lock replacement throughout Kokomo, Indiana and Howard County. We carry the most common Kwikset and Schlage hardware on our service vehicles and can rekey most homes in a single visit. Call (833) 632-3357 — real person answers 24/7.</p>
+<p>Affordable Locksmith provides same-day rekeying and lock replacement throughout Kokomo, Indiana and Howard County. We carry the most common Kwikset and Schlage hardware on our service vehicles and can rekey most homes in a single visit. Call (575) 573-2625 — real person answers 24/7.</p>
     `,
   },
   {
@@ -511,7 +511,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Smart Lock Installation Service in Kokomo Indiana</h2>
-<p>Affordable Locksmith installs and configures smart locks throughout Kokomo, Indiana and Howard County. We supply and install Schlage, Yale, and Kwikset smart locks, set up the mobile app, create your access codes, and ensure the deadbolt engages properly before leaving. Call (833) 632-3357 to schedule installation.</p>
+<p>Affordable Locksmith installs and configures smart locks throughout Kokomo, Indiana and Howard County. We supply and install Schlage, Yale, and Kwikset smart locks, set up the mobile app, create your access codes, and ensure the deadbolt engages properly before leaving. Call (575) 573-2625 to schedule installation.</p>
     `,
   },
   {
@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>A professional locksmith provides an invoice that includes: business name, address, and phone; technician name; description of work performed; itemized parts and labor; total amount; payment method; and a warranty or guarantee statement. If your technician cannot provide this, request it. A refusal is a major red flag.</p>
 
 <h2>Affordable Locksmith Kokomo — Transparent and Verifiable</h2>
-<p>Affordable Locksmith has operated under the same name in Kokomo, Indiana since 1985. Our phone number, reviews, and service area are consistent and verifiable. We provide written price quotes before dispatching, arrive in marked vehicles, and provide detailed invoices on every job. Call (833) 632-3357 to confirm pricing before we arrive — we welcome the question.</p>
+<p>Affordable Locksmith has operated under the same name in Kokomo, Indiana since 1985. Our phone number, reviews, and service area are consistent and verifiable. We provide written price quotes before dispatching, arrive in marked vehicles, and provide detailed invoices on every job. Call (575) 573-2625 to confirm pricing before we arrive — we welcome the question.</p>
     `,
   },
   {
@@ -624,7 +624,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Full lock replacement: $85–$200 per lock depending on hardware quality. Recommended when upgrading security or replacing damaged locks.</p>
 
 <h2>How Fast Can Kokomo Indiana Locks Be Changed?</h2>
-<p>Affordable Locksmith provides same-day rekeying and lock replacement throughout Kokomo and Howard County. A typical home with 3–4 exterior locks can be fully rekeyed in under one hour. Call (833) 632-3357 — a real person answers 24 hours a day and can often schedule same-day service.</p>
+<p>Affordable Locksmith provides same-day rekeying and lock replacement throughout Kokomo and Howard County. A typical home with 3–4 exterior locks can be fully rekeyed in under one hour. Call (575) 573-2625 — a real person answers 24 hours a day and can often schedule same-day service.</p>
     `,
   },
 ];

@@ -6,7 +6,7 @@ import { BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_WEBSITE, BUSINESS
 import { buildFAQSchema, buildSpeakableSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Locksmith FAQ Kokomo Indiana | Costs, Services & Scam Tips | (833) 632-3357',
+  title: 'Locksmith FAQ Kokomo Indiana | Costs, Services & Scam Tips | (575) 573-2625',
   description:
     'Answers to every locksmith question in Kokomo Indiana — how much locksmiths cost, emergency service times, car key programming, rekeying vs replacing, smart locks, and how to avoid scams.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/faq` },
@@ -80,7 +80,7 @@ const allFaqs = [
   { question: 'Who is the best locksmith in Kokomo Indiana?', answer: 'Affordable Locksmith is widely rated the best locksmith in Kokomo Indiana. With 39+ years of continuous local service, owner-operated accountability, 4.9-star ratings from 247+ reviews, and true 24/7 availability, we\'ve earned that reputation by treating every customer like family.' },
   { question: 'Where can I get keys made in Kokomo Indiana?', answer: 'Affordable Locksmith provides full key cutting and duplication services in Kokomo for house keys, car keys, transponder keys, high-security keys, and key fobs. We are a fully mobile service and come to your location. Hardware stores (Lowe\'s, Home Depot, Ace) cut basic house keys but typically cannot handle car transponder keys or high-security keys.' },
   { question: 'Can a locksmith come to my location in Kokomo?', answer: 'Yes — we are fully mobile and come to you anywhere in Kokomo, Howard County, and surrounding areas. We do not have a storefront you visit; we bring all equipment to your car, home, or business. This is the standard model for professional locksmiths.' },
-  { question: 'Which locksmith is open now in Kokomo?', answer: 'Affordable Locksmith is open right now — 24 hours a day, 7 days a week. Call (833) 632-3357 and a real person will answer immediately, any time of day or night.' },
+  { question: 'Which locksmith is open now in Kokomo?', answer: 'Affordable Locksmith is open right now — 24 hours a day, 7 days a week. Call (575) 573-2625 and a real person will answer immediately, any time of day or night.' },
   // Smart Locks
   { question: 'Can locksmiths install smart locks?', answer: 'Yes. We install and configure smart locks including Schlage Encode, Yale Assure, Kwikset Halo, and August smart locks. We ensure the lock is properly fitted, the deadbolt engages correctly, and the app is set up before we leave. Smart lock installation in Kokomo typically takes 30–45 minutes.' },
   { question: 'Are keypad locks worth it?', answer: 'Yes for most homeowners. Keypad locks eliminate key management, allow temporary codes for housekeepers or guests, and many integrate with home security systems. Grade 1 keypad deadbolts (Schlage Encode, Yale Assure) are as secure as keyed locks. The main downside: batteries die and need replacing every 6–12 months.' },
@@ -133,7 +133,7 @@ export default function FAQPage() {
             <div className="bg-white/10 border border-white/20 rounded-2xl p-6 mb-6">
               <p className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-blue-50 text-lg leading-relaxed speakable-summary">
-                A locksmith in Kokomo Indiana typically costs $45–$150. Emergency service is available 24/7 with 15–30 minute response. Car lockouts start at $45, rekeying starts at $25 per lock, and transponder keys start at $75 — all significantly less than dealership pricing. Call <strong>(833) 632-3357</strong> any time.
+                A locksmith in Kokomo Indiana typically costs $45–$150. Emergency service is available 24/7 with 15–30 minute response. Car lockouts start at $45, rekeying starts at $25 per lock, and transponder keys start at $75 — all significantly less than dealership pricing. Call <strong>(575) 573-2625</strong> any time.
               </p>
             </div>
 
