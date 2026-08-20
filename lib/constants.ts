@@ -1,8 +1,8 @@
 export const BUSINESS_NAME = 'Affordable Locksmith';
 export const BUSINESS_NAME_FULL = 'Affordable Locksmith Kokomo';
-export const BUSINESS_PHONE = '5755732625';
-export const BUSINESS_PHONE_DISPLAY = '(575) 573-2625';
-export const BUSINESS_PHONE_HREF = 'tel:+15755732625';
+export const BUSINESS_PHONE = '9172034678';
+export const BUSINESS_PHONE_DISPLAY = '(917) 203-4678';
+export const BUSINESS_PHONE_HREF = 'tel:+19172034678';
 export const BUSINESS_EMAIL = 'info@affordablelocksmithkokomo.com';
 export const BUSINESS_WEBSITE = 'https://affordablelocksmithkokomo.com';
 export const BUSINESS_ADDRESS_STREET = 'Kokomo';
@@ -201,7 +201,7 @@ export const FAQ_HOME = [
   },
   {
     question: 'Are you available for emergency locksmith service 24/7?',
-    answer: 'Yes! We offer true 24/7 emergency locksmith service in Kokomo and throughout Howard County. Whether you\'re locked out at 2 AM or need urgent lock repair on a holiday, just call (575) 573-2625 and we\'ll be there.',
+    answer: 'Yes! We offer true 24/7 emergency locksmith service in Kokomo and throughout Howard County. Whether you\'re locked out at 2 AM or need urgent lock repair on a holiday, just call (917) 203-4678 and we\'ll be there.',
   },
 ];
 
@@ -214,7 +214,7 @@ export const STATS = [
 
 export const DEFAULT_META = {
   titleTemplate: '%s | Affordable Locksmith Kokomo Indiana',
-  defaultTitle: 'Locksmith Kokomo Indiana | Affordable Locksmith | (575) 573-2625',
-  description: 'Affordable Locksmith — trusted locksmiths in Kokomo, Indiana with 39+ years of experience. Locksmith in Kokomo Indiana for car lockouts, home lockouts, commercial locks, and 24/7 emergency service. Call (575) 573-2625.',
+  defaultTitle: 'Locksmith Kokomo Indiana | Affordable Locksmith | (917) 203-4678',
+  description: 'Affordable Locksmith — trusted locksmiths in Kokomo, Indiana with 39+ years of experience. Locksmith in Kokomo Indiana for car lockouts, home lockouts, commercial locks, and 24/7 emergency service. Call (917) 203-4678.',
   ogImage: '/og-image.jpg',
 };

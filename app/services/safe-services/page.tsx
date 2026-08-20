@@ -8,9 +8,9 @@ import { buildServiceSchema, buildBreadcrumbSchema, buildSpeakableSchema } from 
 import ServiceLocationLinks from '@/components/ServiceLocationLinks';
 
 export const metadata: Metadata = {
-  title: 'Safe & Vault Services Kokomo IN | Safe Opening, Combination Change | (575) 573-2625',
+  title: 'Safe & Vault Services Kokomo IN | Safe Opening, Combination Change | (917) 203-4678',
   description:
-    'Professional safe and vault services in Kokomo, Indiana. Safe opening without damage, combination changes, digital lock reset, vault repair. Call (575) 573-2625.',
+    'Professional safe and vault services in Kokomo, Indiana. Safe opening without damage, combination changes, digital lock reset, vault repair. Call (917) 203-4678.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/services/safe-services` },
 };
 

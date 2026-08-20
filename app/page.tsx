@@ -13,14 +13,14 @@ import MapEmbed from '@/components/MapEmbed';
 import { FAQ_HOME, BUSINESS_PHONE_HREF, BUSINESS_PHONE_DISPLAY, BUSINESS_YEARS_EXPERIENCE, BUSINESS_WEBSITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Kokomo Indiana | Affordable Locksmith | 24/7 Emergency | (575) 573-2625',
+  title: 'Locksmith Kokomo Indiana | Affordable Locksmith | 24/7 Emergency | (917) 203-4678',
   description:
-    'Looking for a locksmith in Kokomo Indiana? Affordable Locksmith has served Kokomo, IN since 1985 — 39+ years of trusted, owner-operated service. 24/7 emergency lockouts, car key programming, rekeying & more. Call (575) 573-2625 for fast same-day service.',
+    'Looking for a locksmith in Kokomo Indiana? Affordable Locksmith has served Kokomo, IN since 1985 — 39+ years of trusted, owner-operated service. 24/7 emergency lockouts, car key programming, rekeying & more. Call (917) 203-4678 for fast same-day service.',
   alternates: {
     canonical: BUSINESS_WEBSITE,
   },
   openGraph: {
-    title: 'Locksmith Kokomo Indiana | 24/7 Emergency Service | (575) 573-2625',
+    title: 'Locksmith Kokomo Indiana | 24/7 Emergency Service | (917) 203-4678',
     description:
       'Trusted locksmiths in Kokomo Indiana with 39+ years of experience. Fast response, affordable pricing, owner-operated. Serving all of Howard County 24/7.',
     url: BUSINESS_WEBSITE,

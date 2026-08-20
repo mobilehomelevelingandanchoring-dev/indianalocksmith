@@ -93,7 +93,7 @@ export default function OgImage() {
               borderRadius: 50,
             }}
           >
-            (575) 573-2625
+            (917) 203-4678
           </div>
           <div style={{ color: '#dbeafe', fontSize: 22 }}>
             39+ Years Experience • 24/7 Emergency

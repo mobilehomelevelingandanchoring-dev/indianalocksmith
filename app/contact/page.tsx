@@ -14,9 +14,9 @@ import {
 } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Contact Affordable Locksmith Kokomo IN | (575) 573-2625 | Free Quote',
+  title: 'Contact Affordable Locksmith Kokomo IN | (917) 203-4678 | Free Quote',
   description:
-    'Contact Affordable Locksmith in Kokomo, Indiana. Call (575) 573-2625 for 24/7 emergency service or use our form for scheduled appointments and free quotes.',
+    'Contact Affordable Locksmith in Kokomo, Indiana. Call (917) 203-4678 for 24/7 emergency service or use our form for scheduled appointments and free quotes.',
   alternates: { canonical: `${BUSINESS_WEBSITE}/contact` },
 };
 
