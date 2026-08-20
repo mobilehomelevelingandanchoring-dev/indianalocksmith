@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  generateBuildId: async () => null,
+  generateBuildId: async () => `build-${Date.now()}`,
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
