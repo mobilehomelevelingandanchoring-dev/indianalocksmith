@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     canonical: BUSINESS_WEBSITE,
   },
   verification: {
-    google: 'nsvk-HhnR68TxkUhnZ2vXBLxfcD0eQsL9v03RxMUYfI',
+    google: 'iDhEWQrcI7HtUguS--SKRzd7w8xKzmgb25OcBlb0A9E',
   },
   other: {
     'geo.region': 'US-IN',
